@@ -145,7 +145,7 @@ SOFTWARE.
                 <p><b>Read the full guide as you install each Collection as I outline what the mods do and make setting recommendations for some mods. Some essential mods must be also installed manually.</b> This guide also provides the individual mod links for manual installation or to use another mod manager.<br>
                 </p>
             </div>
-            <!-- Vortex Collections -->
+            <!-- Manual Mod Installation -->
             <div class="section">
                 <p>
                     <a href="#manual-mod-installtion">
@@ -153,6 +153,18 @@ SOFTWARE.
                     </a>
                 <p>Visiting mod pages on the Nexus Mods site, going to the ‘Files’ tab then clicking on ‘Mod Manager download’ under each file entry in the Main File(s) will download them through Vortex. Keep an eye on the top right hand corner of Vortex for the download completion, then click ‘Install’ and ‘Enable’ when those buttons appear. Alternatively downloaded mods are accessible via the ‘Mods’ button on the left hand pane of Vortex once they're finished downloading.</p>
                 <p>You can manually install mods by downloading the zip, dragging and dropping it into Vortex, then installing and enabling it like a mod you just downloaded. Alternatively you can click the + icon in the top left corner to add the mod via the file explorer.</p>
+                </p>
+            </div>
+            <!-- File Conflicts and Mod Cycles -->
+            <div class="section">
+                <p>
+                    <a href="#file-conflicts-and-mod-cycles">
+                        <h2 id="file-conflicts-and-mod-cycles"> File Conflicts and Mod Cycles </h2>
+                    </a>
+                <p>Sometimes mods modify the exact same files, Vortex will warn you when they do with a ‘There are unresolved file conflicts’ warning in the corner. Clicking ‘more’ will display the Mod Rules box asking which of the conflicting mods should be loaded first, often suggesting the order with a ‘(suggested)’ marker. <b>The more important mod should be installed after so it overrides the conflicting mod.</b> For example, if a UI mod clashes with YUP you’ll want to have the UI mod installed after to make sure the UI changes override YUP. The Vortex suggestion is generally accurate, but there’s a few cases where I'll make specific suggestions. More recent mods are generally better.</p>
+                <p>As you install more mods, mod cycles will appear. Vortex generates mod installation order rules which can trigger loops as your mod list get complex. Vortex will say ‘There are mod cycles’ when this happens and not let you deploy until this has been resolved. A pop-up window will appear showing the mods as nodes with arrowed lines signalling the file conflict install direction leading to circular install loops. Right clicking on a node and then clicking ‘Highlight Cycle’ will highlight that mod’s particular loop.</p>
+                <p>You should fix mod cycles gradually, mod by mod, by right clicking on an individual line within the cycle->’Flip Rule’ to change the mod installation order. <b>Fix mod cycles by priority.</b> For instance, you can confidently let textures from texture packs overwrite YUP textures. Repeat this until the window closes, then press the ‘Deploy Mods’ button at the top (the chain icon). One shortcut is to right click on the mod you consider the most obviously essential within a particular cycle, then click ‘Load Last Among Connected’ to make it override all the others. <b>Be aware ‘Load Lat Among Connected’ is a bit of a brute-force solution that may break things. Use at your own discretion.</b></p>
+                <p>You can manage specific file conflicts per mod by right clicking the mod→’Manage File Conflicts’. You can click the family tree-like icon labelled ‘Manage Rules’ at the top to adjust your overall mod file conflict rules at any time.</p>
                 </p>
             </div>
             <div>
@@ -175,7 +187,7 @@ SOFTWARE.
                     <a href="#manual-mod-installtion">Manual Mod Installation</a>
                 </li>
                 <li>
-                    <a href="#essential_dlc">DLC Enhancements</a>
+                    <a href="#file-conflicts-and-mod-cycles"> File Conflicts and Mod Cycles </h2>
                 </li>
                 <li>
                     <a href="#raiders">Mojave Raiders</a>
