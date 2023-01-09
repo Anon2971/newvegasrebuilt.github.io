@@ -56,7 +56,6 @@ body {
 
 a {
     text-decoration: none;
-    color: rgb(253,186,82);
 }
 
 b {
@@ -128,7 +127,7 @@ img {
 }
 
 .section a {
-    color: rgb(51, 122, 183);
+    color: rgb(253,186,82);
     font-size: 1.025em;
 }
 
