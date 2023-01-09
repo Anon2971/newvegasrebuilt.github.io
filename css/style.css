@@ -55,8 +55,8 @@ body {
 }
 
 a {
-    color: #FDBA52;
     text-decoration: none;
+    color: rgb(253,186,82);
 }
 
 b {
