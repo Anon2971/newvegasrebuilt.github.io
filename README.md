@@ -9,3 +9,5 @@ New Vegas Rebuilt is a comprehensive Fallout New Vegas modding guide for beginne
 The guide is split into element categories with a Vortex Collection per section allowing you to mod your New Vegas install as lightly or heavily as you'd like. The code for this site is forked from Viva New Vegas. Big thank you to Qlore for making his guide free to use and modify.
 
 Please note that this site is a Work-In-Progress. I'm transitioning the guide from a Google Drive document to this website, so this guide will appear very similar to Viva New Vegas at first whilst I work on that.
+
+-Anon2971
