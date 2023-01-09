@@ -1,7 +1,11 @@
-# [Viva New Vegas](https://vivanewvegas.github.io)
+# [New Vegas Rebuilt](https://newvegasrebuilt.github.io)
 
 [![LICENSE](https://img.shields.io/badge/license-MIT-informational.svg)](https://github.com/h5bp/html5-boilerplate/blob/master/LICENSE.txt)
 
-### A Comprehensive Fallout New Vegas Modding Guide
+### An Exhaustively Comprehensive Fallout New Vegas Vanilla+ Overhaul Modding Guide
 
-Viva New Vegas is a comprehensive Fallout New Vegas modding guide for beginners and veterans alike. All instructions are written in great detail, with the more complex instructions having accompanying pictures. 24/7 support is also available on the [Discord](https://discord.com/invite/DhX5S27). It is fully modular and comes with pre-made conflict resolution and load order. All mods have been carefully picked out to avoid old, inefficient, or broken popular mods. This guide will provide you with the most stable experience possible, along with adding/reworking amazing content/mechanics.
+New Vegas Rebuilt is a comprehensive Fallout New Vegas modding guide for beginners and veterans alike. This guide was gradually built over 3 years and 300 hours+ of playtime with reference to many other existing New Vegas mod guides. It's designed to fix bugs, improve performance, restore cut content, polish the original gameplay design, enhance it with difficulty rebalances and additional gameplay features, dramatically overhaul the aesthetics (graphics and sounds). The guide is split into element categories with a Vortex Collection per section allowing you to mod your New Vegas install as lightly or heavily as you'd like.
+
+All instructions are written in great detail, with the more complex instructions having accompanying pictures. 24/7 support is also available on the [Discord](https://discord.com/invite/DhX5S27). It is fully modular and comes with pre-made conflict resolution and load order. All mods have been carefully picked out to avoid old, inefficient, or broken popular mods. This guide will provide you with the most stable experience possible, along with adding/reworking amazing content/mechanics.
+
+Please note that this site is a Work-In-Progress. I'm transitioning the guide from a Google Drive document to this website, so this guide will appear very similar to Viva New Vegas at first whilst I work on that.
