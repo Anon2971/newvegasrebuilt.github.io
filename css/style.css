@@ -1,10 +1,15 @@
 /* Default tags */
 
-/* new font */
+/* new fonts */
 
 @font-face {
   font-family: BlueHighway;
   src: url(../../fonts/bluehighway.ttf);
+}
+
+@font-face {
+  font-family: Latto;
+  src: url(../../fonts/Latto-Regular.ttf);
 }
 
 * {
@@ -43,7 +48,7 @@ body {
     display: flex;
     -weight: 400;
     line-height: 1.25em;
-    font-family: blueHighway;
+    font-family: Latto;
     color: rgb(220, 220, 220);
     background-color: rgb(64, 64, 64);
     font-size: 0.75em;
