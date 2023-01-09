@@ -69,7 +69,7 @@ code {
 }
 
 textarea {
-    font-family: JBlueHighway';
+    font-family: 'JetBrains Mono', monospace;
     font-size: 0.8em;
     resize: none;
     width: 90%;
