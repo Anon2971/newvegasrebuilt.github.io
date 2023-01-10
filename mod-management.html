@@ -158,7 +158,6 @@ SOFTWARE.
                 <p>Keep an eye on the top right hand corner of Vortex for the download completion, then click ‘Install’ and ‘Enable’ when those buttons appear.</p>
                 <img src="./img/mod management vortex install.webp" style="max-width:25%;height:auto;">
                 <img src="./img/mod management vortex enable.webp" style="max-width:25%;height:auto;">
-                <p>In the above example a new Pipboy replacement mod overrises all files it conflicts with so it correctly replaces the Pipboy.</p>
                 <p>Alternatively downloaded mods are accessible via the ‘Mods’ button on the left hand pane of Vortex once they're finished downloading.</p>
                 <p>You can manually install mods by downloading the zip, dragging and dropping it into Vortex, then installing and enabling it like a mod you just downloaded. Alternatively you can click the + icon in the top left corner to add the mod via the file explorer.</p>
                 </p>
@@ -173,11 +172,11 @@ SOFTWARE.
                 <img src="./img/mod management unresolved file conflicts.webp" alt="Vortex Unresolved File Conflicts screenshot" style="max-width:50%;height:auto;">
                 <p>Clicking ‘more’ will display the Mod Rules box asking which of the conflicting mods should be loaded first, often suggesting the order with a ‘(suggested)’ marker. <b>The more important mod should be installed after so it overrides the conflicting mod.</b> For example, if a UI mod clashes with YUP you’ll want to have the UI mod installed after to make sure the UI changes override YUP.</p>
                 <img src="./img/mod management file conflicts.webp" alt="Vortex File Conflicts screenshot" style="max-width:50%;height:auto;">
+                <p>In the above example a new Pipboy replacement mod overrises all files it conflicts with so it correctly replaces the Pipboy.</p>
                 <p>The Vortex suggestion is generally accurate, but there’s a few cases where I'll make specific suggestions. More recent mods are generally better.</p>
                 <p>As you install more mods, mod cycles will appear. Vortex generates mod installation order rules which can trigger loops as your mod list get complex. Vortex will say ‘There are mod cycles’ when this happens and not let you deploy until this has been resolved. A pop-up window will appear showing the mods as nodes with arrowed lines signalling the file conflict install direction leading to circular install loops.</p>
                 <img src="./img/mod management mod cycles.webp" alt="Vortex Mood Cycle screenshot" style="max-width:50%;height:auto;">
-                <p>Right clicking on a node and then clicking ‘Highlight Cycle’ will highlight that mod’s particular loop. You should fix mod cycles gradually, mod by mod, by right clicking on an individual line within the cycle->’Flip Rule’ to change the mod installation order.</p>
-                <p><b>Fix mod cycles by priority.</b> For instance, you can confidently let textures from texture packs overwrite YUP textures. Repeat this until the window closes, then press the ‘Deploy Mods’ button at the top.</p>
+                <p>Right clicking on a node and then clicking ‘Highlight Cycle’ will highlight that mod’s particular loop. You should fix mod cycles gradually, mod by mod, by right clicking on an individual line within the cycle->’Flip Rule’ to change the mod installation order.<b>Fix mod cycles by priority.</b> For instance, you can confidently let textures from texture packs overwrite YUP textures. Repeat this until the window closes, then press the ‘Deploy Mods’ button at the top.</p>
                 <img src="./img/mod management deploy mods.webp"  style="max-width:10%;height:auto;">
                 <p>One shortcut is to right click on the mod you consider the most obviously essential within a particular cycle, then click ‘Load Last Among Connected’ to make it override all the others. <b>Be aware ‘Load Last Among Connected’ is a bit of a brute-force solution that may break things. Use at your own discretion.</b></p>
                 <p>You can manage specific file conflicts per mod by right clicking the mod→’Manage File Conflicts’. You can click the family tree-like icon labelled ‘Manage Rules’ at the top to adjust your overall mod file conflict rules at any time.</p>
@@ -189,10 +188,14 @@ SOFTWARE.
                         <h2 id="plugin-management"> Plugin Management and Mergers </h2>
                     </a>
                         <blockquote><b>Merging plugins can break mods and should be a last resort.</b> Feel free to ignore this section and return to it only when required.</blockquote>
-                        <p>Some mods require .esp plugins. Vortex won’t let you launch New Vegas if you hit 255 due to Gamebryo bugs from that point onwards. You can overcome this by using mod tools to merge your plugins and slim down that number. <a href="https://www.youtube.com/c/gamerpoets" target="_blank">GamerPoets</a> outlines plugin merging for Skyrim below. Follow and use the <u>exact</u> same steps, just choose New Vegas instead of Skyrim.</p>
+                        <p>Some mods require .esp plugins. Vortex won’t let you launch New Vegas if you hit 255 due to it typically breaking the game engine. You can overcome this by using mod tools to merge your plugins and slim down that number. <a href="https://www.youtube.com/c/gamerpoets" target="_blank">GamerPoets</a> outlines plugin merging for Skyrim below. Follow and use the <u>exact</u> same steps, just choose New Vegas instead of Skyrim.</p>
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/oQ1mdOGosdc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         <p><b>You should merge as little as possible to avoid breaking mods.</b> You should merge plugins in similar categories with no overlapping content like plugins that are there for compatibility with the same mod. Plugins with little customisation options or no Mod Configuration Manager menu are a good indicator that merging should work, but even that is not guaranteed to support merges. For instance I tried to merge Trigger Happy alongside several other mods related to first person combat mechanics, but it made Trigger Happy not work at all whilst Walking Interia - another mod with zero MCM menu or GUI-based customisation options - worked fine. Merging is a buggy, painful, trial-and-error process, so it should be avoided as much as possible. Disabling DLC mods until you’re about to play them is a good way to avoid plugin merging.</p>
                 </p>
+                <p>
+                    <a href="#suggested-plugin-mergers">
+                        <h3 id="suggested-plugin-mergers">Suggested Plugin Mergers</h3>
+                    </a>
             </div>
             <div>
                 <p>
@@ -219,6 +222,11 @@ SOFTWARE.
                 <li>
                     <a href="#plugin-management"> Plugin Management and Mergers </a>
                 </li>
+                <ul>
+                    <li>
+                        <a href="#suggested-plugin-mergers"> Suggested Plugin Mergers </a>
+                    </li>
+                </ul>
             </ul>
             </p>
         </div>
