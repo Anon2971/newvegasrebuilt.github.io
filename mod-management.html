@@ -151,7 +151,7 @@ SOFTWARE.
                     <a href="#manual-mod-installation">
                         <h2 id="manual-mod-installation"> Manual Mod Installation </h2>
                     </a>
-                <blockquote>If a mod name is colored <strong class="optional">yellow</strong> it means that the mod it may not be suited for everyone. It's optional. <br>
+                <blockquote>If a mod name is colored <strong class="optional">yellow</strong> it means that mod it may not be suited for everyone's tastes. It's optional. <br>
                 If a mod is colored <strong class="performance">red</strong> it means that the mod may be performance intensive on lower-end systems. It can be disabled if you're concerned about that. </blockquote>
                 <p>Visiting mod pages on the Nexus Mods site, going to the ‘Files’ tab then clicking on ‘Mod Manager download’ under each file entry in the Main File(s) will download them through Vortex.</p>
                 <img src="./img/mod management nexus manual download.webp" alt="Nexus Mods download screenshot" style="max-width:50%;height:auto;">
@@ -168,8 +168,8 @@ SOFTWARE.
                     <a href="#collection-modularity">
                         <h2 id="collection-modularity"> Collection Modularity </h2>
                     </a>
-                    <p>The Collections contained within this guide focuses on overhauling separate aspects of New Vegas. You should be able to pick and choose Collections overhauling categories to your liking. I personally play with all of them installed. The Collections were gradually built out of my own personal mod setup as was this entire guide.</p>
-                    <blockquote><b>If you’ve never played New Vegas before, I recommend only installing Collections 1-4 for your first playthrough.</b>They provide a more polished vanilla New Vegas experience plus restore cut content without dramatically changing the original gameplay design. You could then install 7-8 on top of that for remastered visuals. Please note section 7’s lighting will dramatically change the atmosphere of the game (for the better IMO but its noticeably different from NV’s original style.)</blockquote>
+                    <p>The Collections contained within this guide overhaul separate aspects of New Vegas. You should be able to pick and choose them to your liking. I personally play with all of them installed. The Collections were gradually built out of my own personal mod setup as was this entire guide.</p>
+                    <blockquote><b>If you’ve never played New Vegas before, I recommend only installing Collections 1-4 for your first playthrough.</b> They provide a more polished vanilla New Vegas experience plus restore cut content without dramatically changing the original gameplay design. You could then install 7-8 on top of that for remastered visuals. Please note Collection 7’s lighting will dramatically change the atmosphere of the game (for the better IMO but its noticeably different from NV’s original style.)</blockquote>
                 </p>
             </div>         
             <!-- File Conflicts and Mod Cycles -->
@@ -187,19 +187,19 @@ SOFTWARE.
                 <p>As you install more mods, mod cycles will appear. Vortex generates mod installation order rules which can trigger loops as your mod list get complex. Vortex will say ‘There are mod cycles’ when this happens and not let you deploy until this has been resolved. A pop-up window will appear showing the mods as nodes with arrowed lines signalling the file conflict install direction leading to circular install loops.</p>
                 <img src="./img/mod management mod cycles.webp" alt="Vortex Mood Cycle screenshot" style="max-width:50%;height:auto;">
                 <p>Right clicking on a node and then clicking ‘Highlight Cycle’ will highlight that mod’s particular loop. You should fix mod cycles gradually, mod by mod, by right clicking on an individual line within the cycle->’Flip Rule’ to change the mod installation order.<b>Fix mod cycles by priority.</b> For instance, you can confidently let textures from texture packs overwrite YUP textures. Repeat this until the window closes, then press the ‘Deploy Mods’ button at the top.</p>
-                <img src="./img/mod management deploy mods.webp"  style="max-width:10%;height:auto;">
+                <img src="./img/mod management deploy mods.webp"  style="max-width:15%;height:auto;">
                 <p>One shortcut is to right click on the mod you consider the most obviously essential within a particular cycle, then click ‘Load Last Among Connected’ to make it override all the others. <b>Be aware ‘Load Last Among Connected’ is a bit of a brute-force solution that may break things. Use at your own discretion.</b></p>
-                <p>You can manage specific file conflicts per mod by right clicking the mod→’Manage File Conflicts’. You can click the family tree-like icon labelled ‘Manage Rules’ at the top to adjust your overall mod file conflict rules at any time.</p>
+                <p>You can manage specific file conflicts per mod by right clicking the mod→’Manage File Conflicts’. You can click the family tree-like icon labelled ‘Manage Rules’ at the top (seen in the screenshot above to the left of 'Deploy Mods' to adjust your overall mod file conflict rules at any time.</p>
                 </p>
             </div>
-            <!-- Collection testing-->
+            <!-- Testing -->
             <div class="section">
                 <p>
                     <a href="#testing">
                         <h2 id="testing"> Testing </h2>
                     </a>
-                    <p>Before installing any Collections or individual section of this guide, I’d highly recommend starting a new game with zero mods, saving in Doc Mitchell’s house immediately after using the Vigor Tester (stat creation) before you go outside and loading it up after each mod section to test if everything works as expected. Saving there lets you test interior loading, exterior loading when you exit the house, NPC interaction and combat quickly. It would be good practise to test after installing each individual Collection.</p>
-                    <blockquote>Please be aware that due to the huge number of mods New Vegas may still crash unpredictably. Autosaving is also known to cause problems. Turn off autosaves in Settings and manually save regularly to avoid crashes causing any save corruption.</blockquote>
+                    <p>Before installing any Collections or individual section of this guide, start a new game with zero mods, saving in Doc Mitchell’s house immediately after using the Vigor Tester (stat creation) before you go outside. Load it up after each mod section to test if everything works as expected. Saving there lets you test interior loading, exterior loading when you exit the house, NPC interaction (Doc Mitchell) and combat (the NPCs immediately outside) quickly. This should cover all aspects of New Vegas that this mod guide may impact. It would be good practise to load up this save and test New Vegas after installing each individual Collection.</p>
+                    <blockquote>Please be aware that New Vegas may still crash unpredictably even with bug fixes and performance optimisations installed. Autosaving is also known to cause problems. Turn off autosaves in Settings and manually save regularly to avoid crashes causing save corruption.</blockquote>
                 </p>
             </div> 
             <div class="section">
@@ -275,7 +275,7 @@ SOFTWARE.
                     <a href="#merged-plugin-load-order">
                         <h3 id="merged-plugin-load-order">Merged Plugin Load Order</h3>
                     </a>
-                    <p>Finally, you should ensure your merged plugins are loaded in the right order. Clicking the + icon on the left hand side will show the Vortex ‘Plugins’ page which uses LOOT to automatically optimise the order your mod plugins will be loaded in. <b>Check the ‘Load order’ number next to the mods you have merged (which should automatically disable after zEdit has generated your merged plugin), then make sure your merged plugin is loaded in a similar position. i.e. my Strip Lights Region Fix Patches merged plugin loads immediately after Strip Lights Region Fix.</b> Strip Lights Legion Fix is placed near the bottom of my mod load order since it has patches for many other mods at vastly different positiions in my mod load order.</p>
+                    <p>Finally, you should ensure your merged plugins are loaded in the right order. Clicking the + icon on the left hand side will show the Vortex ‘Plugins’ page which uses LOOT to automatically optimise the order your mod plugins will be loaded in. <b>Check the ‘Load order’ number next to the plugins you have merged (which should automatically disable after zEdit has generated your merged plugin), then make sure your merged plugin is loaded in a similar position. i.e. my Strip Lights Region Fix Patches merged plugin loads immediately after Strip Lights Region Fix.</b> Strip Lights Legion Fix is placed near the bottom of my mod load order since it has patches for many other mods at vastly different positiions in my mod load order.</p>
                 </p>    
             </div>
             <div>
