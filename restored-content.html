@@ -32,14 +32,14 @@ SOFTWARE.
         <link rel="icon" href="img/logo.webp">
         <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
         <script src="javascript.js"></script>
-        <title>Content | Viva New Vegas</title>
-        <meta name="description" content="Simple Content changes/additions that make the game feel more balanced and modern.">
+        <title>Content | New Vegas Rebuilt</title>
+        <meta name="description" content="Restores all content cut by Obsidian due to console performance concerns or develelopment deadlines.">
         <meta name="twitter:card" value="summary">
-        <meta property="og:title" content="Viva New Vegas" />
+        <meta property="og:title" content="New Vegas Rebuilt" />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://vivanewvegas.github.io/" />
+        <meta property="og:url" content="https://newvegasrebuilt.github.io/" />
         <meta property="og:image" content="img/logo.webp" />
-        <meta property="og:description" content="Small content additions/restorations that keep the vanilla-style." />
+        <meta property="og:description" content="Restores all content cut by Obsidian due to console performance concerns or develelopment deadlines." />
     </head>
 
     <body>
@@ -49,13 +49,7 @@ SOFTWARE.
                 <i class="fa-solid fa-bars"></i>
             </div>
             <img src="./img/logo.webp" alt="Logo" />
-            <a href="./index.html"> Viva New Vegas </a>
-            <div class="guideLinks">
-                <a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands </a>
-                <a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4 </a>
-                <a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition </a>
-                <a href="https://gloryofcyrodiil.github.io/" target="_blank" rel="nofollow">Oblivion </a>
-            </div>
+            <a href="./index.html"> New Vegas Rebuilt </a>
         </div>
         <!-- Left Sidebar -->
         <div id="sidenavLeft">
@@ -72,16 +66,16 @@ SOFTWARE.
                         <a href="./setup.html">Initial Setup</a>
                     </li>
                     <li>
-                        <a href="./mo2.html">MO2</a>
+                        <a href="./vortex.html">Vortex</a>
                     </li>
                     <li>
-                        <a href="./utilities.html">Utilities</a>
-                    </li>
-                    <li>
-                        <a href="./bugfix.html">Bug Fixes</a>
+                        <a href="./utilities.html">Essentials</a>
                     </li>
                     <li>
                         <a href="./hud.html">User Interface</a>
+                    </li>
+                    <li>
+                        <a href="./restored-content.html" class="active">Restored Content</a>
                     </li>
                     <li>
                         <a href="./gameplay.html">Gameplay</a>
@@ -90,7 +84,7 @@ SOFTWARE.
                         <a href="./overhauls.html">Overhauls</a>
                     </li>
                     <li>
-                        <a href="./content.html" class="active">Content</a>
+                        <a href="./content.html">Content</a>
                     </li>
                     <li>
                         <a href="./visuals.html">Visuals</a>
@@ -114,52 +108,12 @@ SOFTWARE.
                     </li>
                 </ul>
             </div>
-            <div class="guideLinks">
-                <hr>
-                <ul>
-                    <li>
-                        <a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands </a>
-                    </li>
-                    <li>
-                        <a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4 </a>
-                    </li>
-                    <li>
-                        <a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition </a>
-                    </li>
-                    <li>
-                        <a href="https://gloryofcyrodiil.github.io/" target="_blank" rel="nofollow">Oblivion </a>
-                    </li>
-                </ul>
-            </div>
             <div id="footer">
                 <ul>
                     <li>
-                        <a href="https://github.com/VivaNewVegas/vivanewvegas.github.io" target="_blank">
+                        <a href="https://github.com/newvegasrebuilt/newvegasrebuilt.github.io" target="_blank">
                             <i class="fab fa-github"></i>
                         </a>
-                    </li>
-                    <li>
-                        <a href="https://discord.gg/DhX5S27" target="_blank">
-                            <i class="fab fa-discord"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.patreon.com/vivanewvegas" target="_blank">
-                            <i class="fab fa-patreon"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a id="paypal" onclick="toggleDonationMenu()">
-                            <i class="fab fa-paypal"></i>
-                        </a>
-                        <div id="paypalMenu" style="display: none;">
-                            <a href="https://www.paypal.com/paypalme/qolore7" target="_blank">
-                                Author - Qolore7
-                            </a>
-                            <a href="https://www.paypal.com/paypalme/VishVadeva50" target="_blank">
-                                Maintainer - VishVadeva50
-                            </a>
-                        </div>
                     </li>
                 </ul>
             </div>
@@ -170,12 +124,17 @@ SOFTWARE.
             <p>
             <div class="section">
                 <p>
-                <h1> Content </h1>
-                <h2>Creating a Separator in MO2</h2>
-                <ol>
-                    <li>Right-click the empty space in the left pane of MO2 and select <strong>Create Separator</strong>.</li>
-                    <li>Name the separator <strong>Content</strong>.</li>
-                </ol>
+                <h1> Restored Content </h1>
+                <p>Now we get into the real modding. Over the 18 month development of New Vegas, content had to be cut due to performance, deadline or creative reasons. I’ve spent much time analysing <a href="https://www.youtube.com/watch?v=tCyVak2Rfzc&list=PLfLdS8J9fUhTE_8mPM_yx1ehPRWBf79Hs" target="_blank">TriangleCity’s excellent series</a> to research that removed content in detail.</p>
+                <p>This section restores cut content I believe was cut solely due to deadline or performance issues so New Vegas more closely resembles what Obsidian Entertainment would have done with more development time. I haven’t included mods adding content I believe was removed for a reason or so far from completion it’s difficult to tell if it resembles anything Obsidian would have done.</p>
+                </p>
+            </div>
+            <!-- Collection 3/10: Restored Content-->
+            <div class="section">
+                <p>
+                    <h2 id="restored_content">Collection 3/10: <a class="link" href="https://next.nexusmods.com/newvegas/collections/bm9hhi" target="_blank">Restored Content</h2>
+                </a>
+                This Collection contains all mods listed below.
                 </p>
             </div>
             <!-- Uncut -->
@@ -250,19 +209,7 @@ SOFTWARE.
             <p>
             <ul>
                 <li>
-                    <a href="#uncut">Uncut Wasteland</a>
-                </li>
-                <li>
-                    <a href="#fpgel">FPGEL</a>
-                </li>
-                <li>
-                    <a href="#essential_dlc">DLC Enhancements</a>
-                </li>
-                <li>
-                    <a href="#raiders">Mojave Raiders</a>
-                </li>
-                <li>
-                    <a href="#tld">The Living Desert</a>
+                    <a href="restored_content">Collection 3/10: Restored Content</a>
                 </li>
             </ul>
             </p>
