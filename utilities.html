@@ -147,7 +147,7 @@ SOFTWARE.
                 <p>
                     <h2 id="gopher_stable">Collection 1a/10 (Utilities): <a class="link" href="https://next.nexusmods.com/newvegas/collections/60wuix" target="_blank">Gopher's Stable New Vegas</h2>
                 </a>
-                This was the starting point for my modding journey. Installing this Collection first will download and install (nearly all of) the below 8 mods automatically.
+                This was the starting point for my modding journey. Gopher's Collection primarily includes various script extension tools many other mods rely on. Installing this Collection first will download and install most of the below 8 mods automatically.
                 </p>
             </div>
             <!-- 4GB Patch -->
@@ -247,8 +247,57 @@ SOFTWARE.
                     <li><b><a href="https://www.nexusmods.com/newvegas/mods/76522" target="_blank">Stewie Tweaks Essentials INI</a></b></li>
                 </ul> Collection of many configurable quality of life improvements/bug fixes. Settings can be further enabled/disabled/tweaked in the new <strong>Tweaks</strong> section added to the main menu. </p>
             </div>
-
-<!-- Items to include in later parts below-->
+            <!-- Testing -->
+            <div class="section">
+                <p>
+                    <a href="#testing">
+                        <h2 id="testing">Utilities Testing</h2>
+                    </a>
+                <ol>
+                    <li>Restart your PC (Otherwise some plugins will print out 0)</li>
+                    <li>Launch the game using the <strong>New Vegas</strong> option in MO2 (NOT the <strong>NVSE</strong> option) </li>
+                    <li>If you see a black console window appear, it means <strong>NVHR</strong> is working</li>
+                    <ul>
+                        <li>If not, <a href="./utilities.html#heap">NVHR</a> is installed incorrectly</li>
+                    </ul>
+                    <li>Once the game has reached the main menu, hit the <code>~</code> key (Above the tab key) to open the console</li>
+                    <ul>
+                        <li>You will need to unplug/disconnect any controllers to be able to use the keyboard</li>
+                    </ul>
+                    <li>Enter <code>GetNVSEVersion</code>, and the console should print <code>NVSE version: 6</code>
+                    </li>
+                    <ul>
+                        <li>If not, <a href="./utilities.html#xnvse">xNVSE</a> is installed incorrectly</li>
+                    </ul>
+                    <li>Next, enter <code>GetIsLAA</code>, and the console should print <code>GetIsLAA >> 2</code></li>
+                    <ul>
+                        <li>If it prints <code>>> 0</code>, then the <a href="./utilities.html#4gb_patcher">4GB Patch</a> was applied incorrectly</li>
+                        <li>If it prints an error message, then <a href="./utilities.html#jip">JIP LN NVSE</a> is installed incorrectly</li>
+                    </ul>
+                    <li>Next, enter <code>GetINISetting "bUseThreadedAI:General"</code> and the console should print <code>INISetting bUseThreadedAI:General >> 1</code>
+                    </li>
+                    <ul>
+                        <li>If not, then the <a href="./mo2.html#custom_ini" target="_blank">Tweaking FalloutCustom.ini</a> step was done incorrectly</li>
+                    </ul>
+                    <li>Next, enter <code>IsDLLLoaded CobbCrashLogger</code>, and the console should print <code>IsDLLLoaded "CobbCrashLogger.dll" >> 1</code>
+                    </li>
+                    <ul>
+                        <li>If not, then <a href="./utilities.html#cobb">Crash Logger</a> is installed incorrectly</li>
+                    </ul>
+                    <li>Next, enter <code>IsDLLLoaded NVTF</code>, and the console should print <code>IsDLLLoaded "nvtf.dll" >> 1</code>
+                    </li>
+                    <ul>
+                        <li>If not, then <a href="./utilities.html#nvtf">NVTF</a> is installed incorrectly</li>
+                    </ul>
+                    <li>Next, enter <code>IsDLLLoaded mlf</code>, and the console should print <code>IsDLLLoaded "mlf.dll" >> 1</code>
+                    </li>
+                    <ul>
+                        <li>If not, then <a href="./utilities.html#limit_fix">Mod Limit Fix</a> is installed incorrectly </li>
+                    </ul>
+                </ol>
+                </p>
+            </div>
+            <!-- Collection 1b-c/10: Essentials-->
             <div class="section">
                 <p>
                         <h2 id="nv_rebuilt_1bc">Collection 1b-c/10: <a class="link" href="https://next.nexusmods.com/newvegas/collections/uxekys?tab=About" target="_blank">Essentials</h2>
@@ -303,6 +352,18 @@ SOFTWARE.
                     <li>Additionally install <a href="https://www.nexusmods.com/newvegas/mods/70486" target="_blank">Clean Companion Wheel</a> 256x256</li>
                 </ul> Thousands of Pip-Boy icons re-made from scratch in HD along with many bug fixes. </p>
             </div>
+            <!-- Collision Meshes -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/65906" target="_blank">
+                        <h2 id="collision_meshes"> Collision Meshes </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - Collision Meshes</b></li>
+                    <li><b>Main File - 1.6.3 to 1.6.4 patch</b></li>
+                </ul> replaces poor collision meshes allowing you to interact logically in ways you couldn’t before i.e. shoot through car windows, towers, railings etc.. </p>
+            </div>
             <!-- Console Paste -->
             <div class="section">
                 <p>
@@ -335,6 +396,19 @@ SOFTWARE.
                 <ul>
                     <li><b>Main File - Elijah Voice Files Fix - WAV Encoding</b></li>
                 </ul> Fixes audio glitches in Elijah's voice during Dead Money. </p>
+            </div>
+            <!-- Extended Roombounds -->
+            <div class="section">
+                <p>
+                    <a class="exrb" href="https://www.nexusmods.com/newvegas/mods/7150" target="_blank">
+                        <h2 id="exrb"> Extended Roombounds (exRB) </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - ExRB</b></li>
+                    <li>Select 'full' in the installer and enable all experimental features</li>
+                </ul> Changes roombounds around interior cells for a performance boost.
+                </p>
             </div>
             <!-- Extinguished Fire Barrels -->
             <div class="section">
@@ -469,54 +543,12 @@ SOFTWARE.
                 </ul> Resolves the lights of the Strip not being visible from certain map regions. 
             <blockquote>You’ll have to install several compatibility patches for other mods in the other Collections throughout this guide. Make sure the Strip Lights Region Fix patch plugins are installed <u>after</u> Strip Lights Region Fix and its relevant mod in your Plugins tab.</p>
             </div>
-            <!-- Testing -->
+            <!-- Minor Bug Fixes-->
             <div class="section">
                 <p>
-                    <a href="#testing">
-                        <h2 id="testing">Testing Utilities</h2>
-                    </a>
-                <ol>
-                    <li>Restart your PC (Otherwise some plugins will print out 0)</li>
-                    <li>Launch the game using the <strong>New Vegas</strong> option in MO2 (NOT the <strong>NVSE</strong> option) </li>
-                    <li>If you see a black console window appear, it means <strong>NVHR</strong> is working</li>
-                    <ul>
-                        <li>If not, <a href="./utilities.html#heap">NVHR</a> is installed incorrectly</li>
-                    </ul>
-                    <li>Once the game has reached the main menu, hit the <code>~</code> key (Above the tab key) to open the console</li>
-                    <ul>
-                        <li>You will need to unplug/disconnect any controllers to be able to use the keyboard</li>
-                    </ul>
-                    <li>Enter <code>GetNVSEVersion</code>, and the console should print <code>NVSE version: 6</code>
-                    </li>
-                    <ul>
-                        <li>If not, <a href="./utilities.html#xnvse">xNVSE</a> is installed incorrectly</li>
-                    </ul>
-                    <li>Next, enter <code>GetIsLAA</code>, and the console should print <code>GetIsLAA >> 2</code></li>
-                    <ul>
-                        <li>If it prints <code>>> 0</code>, then the <a href="./utilities.html#4gb_patcher">4GB Patch</a> was applied incorrectly</li>
-                        <li>If it prints an error message, then <a href="./utilities.html#jip">JIP LN NVSE</a> is installed incorrectly</li>
-                    </ul>
-                    <li>Next, enter <code>GetINISetting "bUseThreadedAI:General"</code> and the console should print <code>INISetting bUseThreadedAI:General >> 1</code>
-                    </li>
-                    <ul>
-                        <li>If not, then the <a href="./mo2.html#custom_ini" target="_blank">Tweaking FalloutCustom.ini</a> step was done incorrectly</li>
-                    </ul>
-                    <li>Next, enter <code>IsDLLLoaded CobbCrashLogger</code>, and the console should print <code>IsDLLLoaded "CobbCrashLogger.dll" >> 1</code>
-                    </li>
-                    <ul>
-                        <li>If not, then <a href="./utilities.html#cobb">Crash Logger</a> is installed incorrectly</li>
-                    </ul>
-                    <li>Next, enter <code>IsDLLLoaded NVTF</code>, and the console should print <code>IsDLLLoaded "nvtf.dll" >> 1</code>
-                    </li>
-                    <ul>
-                        <li>If not, then <a href="./utilities.html#nvtf">NVTF</a> is installed incorrectly</li>
-                    </ul>
-                    <li>Next, enter <code>IsDLLLoaded mlf</code>, and the console should print <code>IsDLLLoaded "mlf.dll" >> 1</code>
-                    </li>
-                    <ul>
-                        <li>If not, then <a href="./utilities.html#limit_fix">Mod Limit Fix</a> is installed incorrectly </li>
-                    </ul>
-                </ol>
+                    <a href="#minorfixes">
+                        <h2 id="minorbugfixes">>Minor Bug Fixes</h2>
+                        Words!
                 </p>
             </div>
             <div>
@@ -533,12 +565,13 @@ SOFTWARE.
             <p>
             <ul>
                 <li>
-                    <a href="#gopher_stable">Collection 1a/10: Gopher's Stable New Vegas</a>
+                    <a href="#gopher_stable">Collection 1a/10 (Utilities): Gopher's Stable New Vegas</a>
+                </li>
+                <li>
+                    <a href="#testing">Utilities Testing</a>
                 </li>
                 <li>
                     <a href="#nv_rebuilt_1bc">Collection 1b-c/10: Essentials</a>
-                <li>
-                    <a href="#testing">Testing</a>
                 </li>
             </ul>
             </p>
