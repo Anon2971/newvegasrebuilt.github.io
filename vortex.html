@@ -175,13 +175,103 @@ SOFTWARE.
                     <ol>
                         <li>Run Vortex from the new Start Menu icon for it</li>
                         <li>Log in with your Nexus Mods account so it can download mods for you, check for updates and use Collections</li>
-                        <li>Click on the 'Games' button on the left hand pane, search for New Vegas in the search bar if it doesn't appear then click 'Manage'</li>
+                        <li>Click on the 'Games' button on the left hand pane, search for New Vegas in the search bar then click 'Manage'</li>
                         <li>Click on the 'Settings' icon on the left hand pane, go to 'Workarounds' and ensure under Archive Invalidation that the 'BSA redirection' slider is green<br>
                         <img src="./img/vortex archive invalidation.webp" alt="Vortex Archive Invalidation setting screenshot" style="max-width:50%;height:auto;">
                         <blockquote>If you have Vortex installed on an SSD or a HDD with little space, you can open the <strong>Download</strong> tab in Settings to change the file path to a different drive with more space. This will not effect download/game performance, and the downloads can be deleted after the mods have been installed. Vortex will often automatically delete your downloaded mod zips after installation (they're extracted to a mod staging folder). You can also change the mod staging folder directory via the Mods tab, but I would suggest not doing that as I've personally not moved the staging folder before. I assume having your staging folder on a drive different to your game installation one may cause performance issues when deploying mods.</blockquote>
-                        <li>In the top right, an automated notification pop-up should appear stating <a href="https://github.com/xNVSE/NVSE/releases">New Vegas Scrpt Extender (xNVSE)</a> isn't installed. Click More and Download in the pop-up box. When you see the 'Mod Installed' box appear for New Vegas Script Extender (xNVSE), click 'Enable' then deploy</li>
+                        <li>In the top right, an automated notification pop-up should appear on the bell stating <a href="https://github.com/xNVSE/NVSE/releases">New Vegas Scrpt Extender (xNVSE)</a> isn't installed. Click More and Download in the pop-up box. When you see the 'Mod Installed' box appear for New Vegas Script Extender (xNVSE), click 'Enable' then deploy. Double check it's installed by going to your 'Mods' tab on the left and make sure xNVSE appears as 'Enabled'</li>
                     </ol>
-                    <p>That's all you need to do to set up Vortex!</p>
+                    </p>
+                </div>
+                <!-- Profiles -->
+                <div class="section" id="profiles">
+                    <p>
+                        <a href="#profiles">
+                            <h2>Creating Profiles</h2>
+                        </a> Vortex's "Profiles" feature allows for easy switching between different mod configurations with unique saves and INI settings. In this step, we will create a profile for the guide while keeping a strictly-vanilla profile for testing/de-bugging. Profiles can be selected via the drop-down menu above the left pane.
+                    <ol>
+                        <li>Open the Settings menu on the left hand side of Vortex and slide the 'Enable Profile Management' to the right to enable Profiles.
+                        <li>Select the new Profiles <img src="./img/mo2 profiles.webp" alt="MO2 profiles"> button on the left nav pane.</li>
+                        <li>Under the <strong>New Vegas - Default</strong> profile, click the dropdown arrow then select <strong>Clone</strong>.</li>
+                        <li>Name the new profile <strong>New Vegas Rebuilt - Core</strong>.</li>
+                        <li>Select the Edit button under <strong>New Vegas Rebuilt - Core</strong> profile and enable the <strong>'This profile has it's own game settings'</strong> slider. Repeat the same for the game saves slider as you wish. </li>
+                    </ol>
+                    <ol start="5">
+                        <li>Exit out of the profiles menu and select the <strong>Viva New Vegas</strong> profile from the drop-down above the left pane.</li>
+                        <img src="./img/mo2 profile select.webp" alt="Profile selection">
+                    </ol>
+                    </p>
+                </div>
+                <!-- INI Tweaks -->
+                <div class="section" id="ini_tweaks">
+                    <p>
+                        <a href="#ini_tweaks">
+                            <h2>INI Tweaks</h2>
+                        </a>
+                        <!-- Tweaking FalloutCustom.ini -->
+                    <p>
+                        <a href="#custom_ini">
+                            <h3 id="custom_ini">Tweaking FalloutCustom.ini</h3>
+                        </a> In this step, we will configure the game's INI files to increase performance/stability. We will take advantage of JIP LN NVSE's FalloutCustom.ini feature to make our changes, which allows for INI changes to be made safely without editing the default INIs. Because of this, these changes will not take affect until you install JIP LN NVSE in the <a href="#jip" target="_blank">Utilities</a>
+                    <ol>
+                        <li>Make sure the <strong>New Vegas Rebuilt - Core</strong> profile is active.</li>
+                        <li>Click the second to last folder icon <img width="24px" height="24px" src="./img/mo2 folders.webp" alt="mo2 folder button"> along the top of Vortex in the Mods tab and select <strong>Open Game Settings folder</strong>.</li>
+                        <li>Create a file called <strong>FalloutCustom.ini</strong>.</li>
+                        <li>Paste in the following:</li>
+                        <textarea readonly="readonly" style="height: 51.5em; width: 95%;" onclick="this.focus();this.select()">
+[Archive]
+; List of archives read on startup. Necessary when using decompressed BSAs
+SArchiveList=Fallout - Invalidation.bsa, Fallout - Textures.bsa, Fallout - Textures2.bsa, Fallout - Meshes.bsa, Fallout - Meshes2.bsa, Fallout - Voices1.bsa, Fallout - Sound.bsa, Fallout - Misc.bsa
+
+[Audio]
+; Enables additional worker thread for minor performance improvement. Disable if you encounter audio stutter.
+bMultiThreadAudio=1
+; Disables debug logging to save memory and CPU time
+bUseAudioDebugInformation=0
+; Increases memory buffers to reduce audio issues
+iAudioCacheSize=8192
+iMaxSizeForCachedSound=1024
+
+[BackgroundLoad]
+; Forces cell unload on fast travel to lessen memory usage
+bSelectivePurgeUnusedOnFastTravel=1
+
+[Controls]
+; Disables mouse acceleration
+fForegroundMouseAccelBase=0
+fForegroundMouseAccelTop=0
+fForegroundMouseBase=0
+fForegroundMouseMult=0
+
+[Display]
+; Enables Fullscreen mode
+bFull Screen=1
+; Forces highest texture quality so the game won't crash if you had it set to anything lower
+iTexMipMapSkip=0
+
+[General]
+; Forces faster cell unload to lessen memory usage
+bPreemptivelyUnloadCells=1
+; Spawns additional AI worker threads
+bUseThreadedAI=1
+; Enables multithreading for most operations
+iNumHWThreads=2
+
+[Grass]
+; Increases grass draw distance
+fGrassStartFadeDistance=11200
+
+[PipBoy]
+; Fixes flicker when opening Pip-Boy when its light is on
+fLightEffectFadeDuration=400
+</textarea>
+                    </ol>
+                    </p>
+                    <p>
+                        <a href="#ini_notes">
+                            <h3 id="ini_notes">Notes</h3>
+                        </a> It is highly recommended to avoid changing any other INI settings not in the guide, and to avoid using tools like BethINI. You will realistically not need any other tweaks than the ones already in the guide.
+                    </p>
                     </p>
                 </div>
                 <div>

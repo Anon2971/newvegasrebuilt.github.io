@@ -136,15 +136,12 @@ SOFTWARE.
                 <p>
                 <h1> Essentials </h1>
                 <p>We now begin the first section of New Vegas Rebuilt. This covers essentials - script-extending utilities many mods rely on alongside bug fixes and performance improvements.</p>
-                <blockquote>I've temporarily removed recommendations for <a href="https://www.nexusmods.com/newvegas/mods/65854">BSA Decompressor</a> and <a href="https://www.nexusmods.com/newvegas/mods/77170">Ultimate Edition BSM Fixes</a> as I can't recall the exact steps I did to get them working with Vortex. They were definitely different to the Viva New Vegas ones. It was a simple process, but I think it's better to not include steps for them for now than risk messing up your New Vegas installation via incorrect instructions.</blockquote>
                 </p>
             </div>
-            <!-- Collection 1a - Gopher's Stable New Vegas-->
             <div class="section">
                 <p>
-                    <h2 id="gopher_stable">Collection 1a/10 (Utilities): <a class="link" href="https://next.nexusmods.com/newvegas/collections/60wuix" target="_blank">Gopher's Stable New Vegas</h2>
-                </a>
-                This was the starting point for my modding journey. Gopher's Collection primarily includes various script extension tools many other mods rely on. Installing this Collection first will download and install most of the below 8 mods automatically.
+                <h2 id="manual_utilities">Manual Utilities</h2>
+                <blockquote>The following three utilities should be run manually before installing any other Collections. They act as an optimization base for everything else.</blockquote>
                 </p>
             </div>
             <!-- 4GB Patch -->
@@ -153,15 +150,66 @@ SOFTWARE.
                     <a class="link" href="https://www.nexusmods.com/newvegas/mods/62552" target="_blank">
                         <h2 id="4gb_patcher"> 4GB Patcher </h2>
                     </a>
-                <blockquote><b>You need to install this manually after downloading Gopher's collection! This is required for both Steam & GOG users!</b> The 4GB Patch included with the GOG release is obsolete as it lacks NVSE integration. The other mods will be installed automatically through Vortex. </blockquote>
+                <blockquote><b>This is required for both Steam & GOG users!</b> The 4GB Patch included with the GOG release is obsolete as it lacks NVSE integration. Gopher's Collection includes this mod, but you'll still need to run it manually so you may as well do it before installing any Collections.</blockquote>
                 <h2 class="install">Installation instructions:</h2>
                 <ol>
-                    <li>Download the <strong>Main File - 4GB Patcher</strong> (you can skip this step if you downloaded Gopher's collection as it includes it)</li>
+                    <li>Download the <strong>Main File - 4GB Patcher</strong></li>
                     <li>From the downloaded archive, extract the <strong>.exe</strong> file to the game's <strong>Root</strong> folder</li>
                     <li>Right-click on <strong>FNVpatch.exe</strong> and select <strong>Run as administrator</strong></li>
                     <li>A command prompt window will open and should say <b>FalloutNV.exe patched!</b></li>
                     <li>Close the command prompt and a file named <strong>FalloutNV_backup.exe</strong> should appear in the game's <strong>Root</strong> folder</li>
-                </ol> Makes the game large address aware, meaning it can use 4GB of RAM instead of 2GB. <blockquote>From now on, you should run the game through the Play button on New Vegas in Vortex. This ensures the game runs as expected with your mods and xNVSE loaded. </blockquote>
+                </ol> Makes the game large address aware, meaning it can use 4GB of RAM instead of 2GB.</p>
+            </div>
+            <!-- BSA -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/65854" target="_blank">
+                        <h2 id="bsa_decompressor"> BSA Decompressor </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <blockquote><b>IMPORTANT:</b> Make sure you follow these instructions precisely or else you will end up with missing meshes in your game.</blockquote>
+                <ol>
+                    <li>Download the <strong>Main File - FNV BSA Decompressor</strong> and extract the contents of the archive anywhere outside of the default Windows folders</li>
+                    <li>From the extracted archive, run <strong>FNV BSA Decompressor.exe</strong></li>
+                    <li>Under the <strong>Fallout: New Vegas</strong> header, click <strong>Browse</strong> and choose the location of your game's <strong>Root</strong> folder</li>
+                    <li>Click <strong>Decompress</strong>, wait for the process the finish, then exit the program once finished</li>
+                    <li>Click the <img src="./img/mo2 ini.webp" alt="mo2 ini button"> button at the top of MO2 and select <strong>INI Editor</strong>
+                    </li>
+                    <li>Select the <strong>fallout.ini</strong> tab if its not already selected</li>
+                    <li>Press <kbd>Ctrl</kbd> + <kbd>F</kbd> and search for <strong>SArchiveList=</strong></li>
+                    <li>Replace the existing line with the following:</li>
+                    <textarea readonly="readonly" onclick="this.focus();this.select()">SArchiveList=Fallout - Invalidation.bsa, Fallout - Textures.bsa, Fallout - Textures2.bsa, Fallout - Meshes.bsa, Fallout - Meshes2.bsa, Fallout - Voices1.bsa, Fallout - Sound.bsa, Fallout - Misc.bsa</textarea>
+                </ol>
+                <blockquote><b>IMPORTANT:</b> Make sure the new section is one line when pasted.</blockquote>
+                <ol start="9">
+                    <li>Save and exit</li>
+                </ol> Repackages the BSAs without zlib compression to increase performances and fixes certain sound effects not playing. </p>
+            </div>
+            <!-- ESM -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/77170" target="_blank">
+                        <h2 id="fixed_esms"> Ultimate Edition ESM Fixes </h2>
+                    </a>
+                <h2 class="install">Installation instructions</h2>
+                <ol>
+                    <li>Download the <strong>Main File - Ultimate Edition ESM Fixes</strong> and extract the contents of the archive anywhere outside of the default Windows folders</li>
+                    <li>Click the second to last folder icon <img width="24px" height="24px" src="./img/mo2 folders.webp" alt="mo2 folder button"> button on the far sight and select <strong>Open Mod Staging folder</strong></li>
+                    <li>Create an empty folder called <strong>Fixed ESMs</strong> inside of the Mods folder</li>
+                    <li>From the extracted archive, run <strong>Installer.exe</strong></li>
+                    <li>Under the <strong>Fallout: New Vegas</strong> header, click <strong>Browse</strong> and choose the location of your game's <strong>Root</strong> folder</li>
+                    <li>Under the <strong>ESM Fixes</strong> header, click <strong>Browse</strong> and choose the <strong>Fixed ESMs</strong> folder you just created </li>
+                    <li>Click <strong>Install</strong>, wait for the process the finish, then exit the program once finished</li>
+                    <li>In Mod Organizer 2, press <kbd>F5</kbd> to refresh the left pane and active the <strong>Fixed ESMs</strong> option that should appear</li>
+                </ol> Optimizes and fixes thousands of records across the base game and DLC ESM files to increase performance and stability. 
+                <blockquote>From now on, you should run the game through the Play button on New Vegas in Vortex. This ensures the game runs as expected with your mods and xNVSE loaded. </blockquote></p>
+            </div>
+            <!-- Collection 1a - Gopher's Stable New Vegas-->
+            <div class="section">
+                <p>
+                    <h2 id="gopher_stable">Collection 1a/10 (Utilities): <a class="link" href="https://next.nexusmods.com/newvegas/collections/60wuix" target="_blank">Gopher's Stable New Vegas</h2>
+                </a>
+                This was the starting point for my modding journey. Gopher's Collection primarily includes various script extension tools many other mods rely on. Installing this Collection first will install the below 7 mods automatically alongside the 4GB Patcher you already installed.
                 </p>
             </div>
             <!-- MLF -->
@@ -752,6 +800,9 @@ SOFTWARE.
         <div id="sidenavRight">
             <p>
             <ul>
+                <li>
+                    <a href="#manual_utilities">Manual Utilities</a>
+                </li>
                 <li>
                     <a href="#gopher_stable">Collection 1a/10 (Utilities): Gopher's Stable New Vegas</a>
                 </li>
