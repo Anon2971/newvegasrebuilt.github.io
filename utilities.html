@@ -115,16 +115,6 @@ SOFTWARE.
                             <i class="fab fa-github"></i>
                         </a>
                     </li>
-                    <li>
-                        <a id="paypal" onclick="toggleDonationMenu()">
-                            <i class="fab fa-paypal"></i>
-                        </a>
-                        <div id="paypalMenu" style="display: none;">
-                            <a href="https://www.paypal.com/paypalme/qolore7" target="_blank">
-                                Author - Anon2971
-                            </a>
-                        </div>
-                    </li>
                 </ul>
             </div>
             </p>
@@ -141,16 +131,16 @@ SOFTWARE.
             <div class="section">
                 <p>
                 <h2 id="manual_utilities">Manual Utilities</h2>
-                <blockquote>The following four utilities should be run manually before installing any other Collections. They act as an optimization base for everything else. They are not included within the Collections as you need to to follow the steps for each mod carfully.</blockquote>
+                <blockquote>The following four utilities should be run manually before installing any other Collections. They act as an optimization base for everything else. They are not included within the Collections as you need to to follow the steps for each mod carfeully.</blockquote>
                 </p>
             </div>
             <!-- 4GB Patch -->
             <div class="section">
+                <blockquote><b>This is required for both Steam & GOG users!</b> The 4GB Patch included with the GOG release is obsolete as it lacks NVSE integration. Gopher's Collection includes this mod, but you'll still need to run it manually so you may as well do it before installing any Collections.</blockquote>
                 <p>
                     <a class="link" href="https://www.nexusmods.com/newvegas/mods/62552" target="_blank">
                         <h2 id="4gb_patcher"> 4GB Patcher </h2>
                     </a>
-                <blockquote><b>This is required for both Steam & GOG users!</b> The 4GB Patch included with the GOG release is obsolete as it lacks NVSE integration. Gopher's Collection includes this mod, but you'll still need to run it manually so you may as well do it before installing any Collections.</blockquote>
                 <h2 class="install">Installation instructions:</h2>
                 <ol>
                     <li>Download the <strong>Main File - 4GB Patcher</strong></li>
@@ -170,7 +160,7 @@ SOFTWARE.
                 <h2 class="install">Installation instructions:</h2>
                 <ol>
                     <li>Install and enable the <strong>Main File - DXVK</strong></li>
-                    <li>Within Vortex double click on <strong>DXVK 2.0</strong> on the <strong>Mods</strong> tab, then on the right hand pane change the <strong>Mod Type</strong> to <strong>Engine Injector</strong> </li>
+                    <li>In the Vortex <strong>Mods</strong> tab double click on <strong>DXVK 2.0</strong>, then on the right hand pane change the <strong>Mod Type</strong> to <strong>Engine Injector</strong> </li>
                     <li>Click <strong>Deploy</strong> to ensure DXVK is placed in the corrct <strong>Root</strong> folder</li>
                     <li>If you have an nVidia GPU follow <a href="https://wallsogb.github.io/FalloutNV-Performance-Guide/index.html#dxvk-flip" target="blank">Wall_So GB's Performance Guide section about enabling Flip Model</a> for maximum performance. You'll have to install <a href="https://www.nexusmods.com/newvegas/mods/79211" target="_blank">OneTweak but really tweaked</a> too to ensure this.</li>
                 </ol> 
@@ -196,7 +186,7 @@ SOFTWARE.
                     <textarea readonly="readonly" onclick="this.focus();this.select()">SArchiveList=Fallout - Invalidation.bsa, Fallout - Textures.bsa, Fallout - Textures2.bsa, Fallout - Meshes.bsa, Fallout - Meshes2.bsa, Fallout - Voices1.bsa, Fallout - Sound.bsa, Fallout - Misc.bsa</textarea>
                     <li>Repeat this for <strong>falloutCustom.ini</strong></li>
                 </ol>
-                <blockquote><b>IMPORTANT:</b> Make sure the new section is one line when pasted. It is likely these lines have already been set in both fallout.ini and falloutCustom.ini, but your game will not function properly if they are not.</blockquote>
+                <blockquote><b>IMPORTANT:</b> Make sure the new section is one line when pasted. It is likely these lines have already been set in both INIs, but your game will not function properly if they are not.</blockquote>
                 <ol start="9">
                     <li>Save and exit</li>
                 </ol> Repackages the BSAs without zlib compression to increase performances and fixes certain sound effects not playing. </p>
@@ -216,10 +206,12 @@ SOFTWARE.
                     <li>Under the <strong>Fallout: New Vegas</strong> header, click <strong>Browse</strong> and choose the location of your game's <strong>Root</strong> folder</li>
                     <li>Under the <strong>ESM Fixes</strong> header, click <strong>Browse</strong> and choose the <strong>Fixed ESMs</strong> folder you just created </li>
                     <li>Click <strong>Install</strong>, wait for the process the finish, then exit the program once finished</li>
-                    <li>Reopen Vortex. A window will appear saying <strong>Mods changed on disk</strong> and you should now see say <strong>Added:-"Fixed ESMs"</strong>. Click Apply Changes</li>
-                    <li>Go to your <strong>Mods</strong> tab, search for <strong>Fixed ESMs</strong>, then install and enable it</li>
+                    <li>Reopen Vortex. A window will appear saying <strong>Mods changed on disk</strong> and you should now see it say <strong>Added:-"Fixed ESMs"</strong>. Click Apply Changes</li>
+                    <li>Go to your <strong>Mods</strong> tab, search for <strong>Fixed ESMs</strong> and enable it</li>
                     <li>Vortex will show a notification in the top right that <strong>Fixed ESMs</strong> contains multiple plugins. Click <strong>Enable all</strong> to ensure the fixed ESMs are loaded to replace the default game ones</li>
-                </ol> Optimizes and fixes thousands of records across the base game and DLC ESM files to increase performance and stability. 
+                </ol> 
+                <blockquote>Vortex will show the multiple plugins notification many times as you install mods that contain them. Ensure you click <strong>Enable All</strong> every time so these mods function as expected via their required plugins being enabled. Some are plugins specifically for Fallout 3/TTW/other mods not included in this guide, so if you see a <strong>Missing Masters</strong> error notification in the top right, click the <strong>More</strong> button to investigate and determine if you require that plugin or not.</blockquote> 
+                Optimises and fixes thousands of records across the base game and DLC ESM files to increase performance and stability. 
                 <blockquote>From now on, you should run the game through the Play button on New Vegas in Vortex. This ensures the game runs as expected with your mods and xNVSE loaded. </blockquote></p>
             </div>
             <!-- Collection 1a - Gopher's Stable New Vegas-->
@@ -309,7 +301,7 @@ SOFTWARE.
                     <li><b>Main File - Stewie Tweaks</b></li>
                     <li><b><a href="https://www.nexusmods.com/newvegas/mods/76522" target="_blank">Stewie Tweaks Essentials INI</a></b></li>
                 </ul> Collection of many configurable quality of life improvements/bug fixes. Settings can be further enabled/disabled/tweaked in the new <strong>Tweaks</strong> section added to the main menu. 
-                <blockquote>Vortex will show you a <strong>'Some mods are redundant'</strong> notification after installing this as the Essentials INI makes the Stewie Tweaks INI installed via Gopher's Stable New Vegas redundant. You can safely click <strong>'Disable suggested'</strong> because that INI is simply a blank placeholder. You will recieve a <strong>'Some mod dependencies are not fulfilled'</strong> warning in the corner for Gopher's Stable New Vegas after this which you can ignore.</blockquote>
+                <blockquote>Vortex will show you a <strong>'Some mods are redundant'</strong> notification after installing this as the Essentials INI makes the Stewie Tweaks INI installed via Gopher's Stable New Vegas redundant. You can safely click <strong>'Disable suggested'</strong> because that INI is simply a blank placeholder. You will recieve a <strong>'Some mod dependencies are not fulfilled'</strong> warning in the corner for Gopher's Stable New Vegas after this which you can ignore. The Stewie Essentials INI makes the blank Stewie Tweaks INI no longer required.</blockquote>
                 </p>
             </div>
             <!-- Testing -->
@@ -320,7 +312,7 @@ SOFTWARE.
                     </a>
                 <ol>
                     <li>Restart your PC (Otherwise some plugins will print out 0)</li>
-                    <li>Launch the game using the <strong>New Vegas</strong> option in MO2 (NOT the <strong>NVSE</strong> option) </li>
+                    <li>Launch the game via Vortex as previously described (the play button on New Vegas card image in the top left)</li>
                     <li>If you see a black console window appear, it means <strong>NVHR</strong> is working</li>
                     <ul>
                         <li>If not, <a href="./utilities.html#heap">NVHR</a> is installed incorrectly</li>
@@ -360,6 +352,9 @@ SOFTWARE.
                         <li>If not, then <a href="./utilities.html#limit_fix">Mod Limit Fix</a> is installed incorrectly </li>
                     </ul>
                 </ol>
+
+                Alternatively, you can hover you mouse on the Vault Boy head icon visible in the bottom left of the New Vegas main menu. It will show you statistics about all your installed plugins.
+                <img src="./img/mod management installed script extendors.webp" alt="NV Main Menu installed script extendors screenshot" style="max-width:40%;max-height:auto;">
                 </p>
             </div>
             <!-- Collection 1b-c/10: Essentials-->
