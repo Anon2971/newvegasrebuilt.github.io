@@ -141,7 +141,7 @@ SOFTWARE.
             <div class="section">
                 <p>
                 <h2 id="manual_utilities">Manual Utilities</h2>
-                <blockquote>The following three utilities should be run manually before installing any other Collections. They act as an optimization base for everything else.</blockquote>
+                <blockquote>The following four utilities should be run manually before installing any other Collections. They act as an optimization base for everything else. They are not included within the Collections as you need to to follow the steps for each mod carfully.</blockquote>
                 </p>
             </div>
             <!-- 4GB Patch -->
@@ -160,6 +160,23 @@ SOFTWARE.
                     <li>Close the command prompt and a file named <strong>FalloutNV_backup.exe</strong> should appear in the game's <strong>Root</strong> folder</li>
                 </ol> Makes the game large address aware, meaning it can use 4GB of RAM instead of 2GB.</p>
             </div>
+            <!-- DXVK-->
+            <div class="section">
+                <p>
+                    <a class="link optional" href="https://www.nexusmods.com/newvegas/mods/79299" target="_blank">
+                        <h2 id="dxvk"> DXVK </h2>
+                    </a>
+                <blockquote><b>Strongly recommended for big performance gains if your hardware supports Vulkan (it likely does).</b> Check if your hardware supports it by downloading <a href="https://www.techpowerup.com/download/techpowerup-gpu-z/" target="_blank">GPU-Z</a> and checking the <strong>Advanced</strong> tab. Most graphics cards from 2016 onwards do. Please be aware that this still may not run as expected since Vulkan is designed for Linux systems, but I found it worked flawlessly and for many it's a free significant performance boost.</strong>
+                <h2 class="install">Installation instructions:</h2>
+                <ol>
+                    <li>Install and enable the <strong>Main File - DXVK</strong></li>
+                    <li>Within Vortex double click on <strong>DXVK 2.0</strong> on the <strong>Mods</strong> tab, then on the right hand pane change the <strong>Mod Type</strong> to <strong>Engine Injector</strong> </li>
+                    <li>Click <strong>Deploy</strong> to ensure DXVK is placed in the corrct <strong>Root</strong> folder</li>
+                    <li>If you have an nVidia GPU follow <a href="https://wallsogb.github.io/FalloutNV-Performance-Guide/index.html#dxvk-flip" target="blank">Wall_So GB's Performance Guide section about enabling Flip Model</a> for maximum performance. You'll have to install <a href="https://www.nexusmods.com/newvegas/mods/79211" target="_blank">OneTweak but really tweaked</a> too to ensure this.</li>
+                </ol> 
+                Massively optimises New Vegas performance by running Fallout through the Vulkan API. It has a much lower draw call overhead than Direct 3D 9, which is one of the main performance limiting factors in this game. On my setup it practically doubled my FPS from late 20s/early 30s up to 60s to a much more comfortable 45-60FPS average. Highly recommended especially for older PCs.
+                </p>
+            </div>
             <!-- BSA -->
             <div class="section">
                 <p>
@@ -173,7 +190,15 @@ SOFTWARE.
                     <li>From the extracted archive, run <strong>FNV BSA Decompressor.exe</strong></li>
                     <li>Under the <strong>Fallout: New Vegas</strong> header, click <strong>Browse</strong> and choose the location of your game's <strong>Root</strong> folder</li>
                     <li>Click <strong>Decompress</strong>, wait for the process the finish, then exit the program once finished</li>
-                    <li>Click the <img src="./img/mo2 ini.webp" alt="mo2 ini button"> button at the top of MO2 and select <strong>INI Editor</strong></li>
+                    <li>Go to your Documents/My Games/FalloutNV folder and open <strong>fallout.ini</strong></li>
+                    <li>Press <kbd>Ctrl</kbd> + <kbd>F</kbd> and search for <strong>SArchiveList=</strong></li>
+                    <li>Replace the existing line with the following:</li>
+                    <textarea readonly="readonly" onclick="this.focus();this.select()">SArchiveList=Fallout - Invalidation.bsa, Fallout - Textures.bsa, Fallout - Textures2.bsa, Fallout - Meshes.bsa, Fallout - Meshes2.bsa, Fallout - Voices1.bsa, Fallout - Sound.bsa, Fallout - Misc.bsa</textarea>
+                    <li>Repeat this for <strong>falloutCustom.ini</strong></li>
+                </ol>
+                <blockquote><b>IMPORTANT:</b> Make sure the new section is one line when pasted. It is likely these lines have already been set in both fallout.ini and falloutCustom.ini, but your game will not function properly if they are not.</blockquote>
+                <ol start="9">
+                    <li>Save and exit</li>
                 </ol> Repackages the BSAs without zlib compression to increase performances and fixes certain sound effects not playing. </p>
             </div>
             <!-- ESM -->
@@ -185,13 +210,13 @@ SOFTWARE.
                 <h2 class="install">Installation instructions</h2>
                 <ol>
                     <li>Download the <strong>Main File - Ultimate Edition ESM Fixes</strong> and extract the contents of the archive anywhere outside of the default Windows folders</li>
-                    <li>Click the second to last folder icon <img width="24px" height="24px" src="./img/mo2 folders.webp" alt="mo2 folder button"> along the top of Vortex in the Mods tab and select <strong>Open Mod Staging folder</strong></li>
+                    <li>Click the second to last folder icon <img width="24px" height="24px" src="./img/mo2 folders.webp" alt="mo2 folder button"> along the top of Vortex in the <strong>Mods</strong> tab and select <strong>Open Mod Staging folder</strong></li>
                     <li>Create an empty folder called <strong>Fixed ESMs</strong> inside of the Mod Staging folder and note the directory. Close Vortex after doing this</li>
                     <li>From the extracted Ultimate ESM Fixes archive, run <strong>Installer.exe</strong></li>
                     <li>Under the <strong>Fallout: New Vegas</strong> header, click <strong>Browse</strong> and choose the location of your game's <strong>Root</strong> folder</li>
                     <li>Under the <strong>ESM Fixes</strong> header, click <strong>Browse</strong> and choose the <strong>Fixed ESMs</strong> folder you just created </li>
                     <li>Click <strong>Install</strong>, wait for the process the finish, then exit the program once finished</li>
-                    <li>Reopen Vortex. A window will appear saying <strong>Mods changed on disk</strong> and you should now see <strong>Fixed ESMs</strong> appearing. Click Apply Changes</li>
+                    <li>Reopen Vortex. A window will appear saying <strong>Mods changed on disk</strong> and you should now see say <strong>Added:-"Fixed ESMs"</strong>. Click Apply Changes</li>
                     <li>Go to your <strong>Mods</strong> tab, search for <strong>Fixed ESMs</strong>, then install and enable it</li>
                     <li>Vortex will show a notification in the top right that <strong>Fixed ESMs</strong> contains multiple plugins. Click <strong>Enable all</strong> to ensure the fixed ESMs are loaded to replace the default game ones</li>
                 </ol> Optimizes and fixes thousands of records across the base game and DLC ESM files to increase performance and stability. 
