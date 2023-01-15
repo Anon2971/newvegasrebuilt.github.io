@@ -1,0 +1,465 @@
+<!--
+MIT License
+
+Copyright (c) VivaNewVegas
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="icon" href="img/logo.webp">
+        <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
+        <script src="javascript.js"></script>
+        <title>Gameplay HD | New Vegas Rebuilt</title>
+        <meta name="description" content="Simple gameplay changes/additions that smoothens the original design without radically changing it.">
+        <meta name="twitter:card" value="summary">
+        <meta property="og:title" content="New Vegas Rebuilt" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://newvegasrebuilt.github.io/" />
+        <meta property="og:image" content="img/logo.webp" />
+        <meta property="og:description" content="Simple gameplay changes/additions that smoothens the original design without radically changing it." />
+    </head>
+
+    <body>
+        <!-- Titlebar -->
+        <div class="titlecontainer">
+            <div id="sideButton" onclick="toggleNav()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <img src="./img/logo.webp" alt="Logo" />
+            <a href="./index.html"> New Vegas Rebuilt </a>
+        </div>
+        <!-- Left Sidebar -->
+        <div id="sidenavLeft">
+            <p>
+            <div>
+                <ul>
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./intro.html">Introduction</a>
+                    </li>
+                    <li>
+                        <a href="./setup.html">Initial Setup</a>
+                    </li>
+                    <li>
+                        <a href="./mo2.html">MO2</a>
+                    </li>
+                    <li>
+                        <a href="./essentials.html">Utilities</a>
+                    </li>
+                    <li>
+                        <a href="./bugfix.html">Bug Fixes</a>
+                    </li>
+                    <li>
+                        <a href="./hud.html">User Interface</a>
+                    </li>
+                    <li>
+                        <a href="./gameplay-hd.html" class="active">Gameplay</a>
+                    </li>
+                    <li>
+                        <a href="./overhauls.html">Overhauls</a>
+                    </li>
+                    <li>
+                        <a href="./content.html">Content</a>
+                    </li>
+                    <li>
+                        <a href="./visuals.html">Visuals</a>
+                    </li>
+                    <li>
+                        <a href="./finish.html">Final Steps</a>
+                    </li>
+                    <li>
+                        <a href="./appendix.html">Appendix</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <hr>
+                <ul>
+                    <li>
+                        <a href="./avoid-tools.html">Tools to Avoid</a>
+                    </li>
+                    <li>
+                        <a href="./avoid-mods.html">Mods to Avoid</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="guideLinks">
+                <hr>
+                <ul>
+                    <li>
+                        <a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands </a>
+                    </li>
+                    <li>
+                        <a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4 </a>
+                    </li>
+                    <li>
+                        <a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition </a>
+                    </li>
+                    <li>
+                        <a href="https://gloryofcyrodiil.github.io/" target="_blank" rel="nofollow">Oblivion </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="footer">
+                <ul>
+                    <li>
+                        <a href="https://github.com/newvegasrebuilt/newvegasrebuilt.github.io" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            </p>
+        </div>
+        <!-- Content -->
+        <div class="content">
+            <p>
+            <div class="section">
+                <p>
+                <h1> Gameplay HD </h1>
+                    <h2 id="gameplay_hd"> Collection 4/10: <a class="link" href="https://www.nexusmods.com/newvegas/mods/66666" target="_blank">Gameplay HD</a> </h2>
+                We now get into the first of two gameplay-focused Collections - Gameplay HD. This first Collection's philosophy is to make the original gameplay design smoother without dramatically changing its original feel.
+                </p>
+            </div>
+            <!-- DLC Delay -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/75851" target="_blank">
+                        <h2 id="dlc_delay"> Delay DLC Redux </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - Delay DLC Redux</b></li>
+                </ul> Prevents the game's DLC from spamming the new game startup messages and requires you be near a given DLC's starting location to receive its quest. </p>
+            </div>
+            <!-- Improved Quest Objectives -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/66411" target="_blank">
+                        <h2 id="iqo"> Improved Quest Objectives </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - IQO 2.5</b></li>
+                    <li>In the installer enable all DLC alongside the <strong>Legion Quests, YUP, Uncut and Living Desert patches</strong> (the latter will be installed later on)</li>
+                </ul> Rewrites all the quest objectives for clarity, better grammar and more consistent labelling. This will make quests easier to follow. </p>
+            </div>
+            <!-- Essential Vanilla Enhancements Merge -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/78877" target="_blank">
+                        <h2 id="enhancementsmerge"> Essential Vanilla Enhancements Merge </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - Vanilla Enhancements Merged</b></li>
+                    <li>Additionally install <a href="https://www.nexusmods.com/newvegas/mods/77945" target="_blank">Essential Vanilla Enhancements Merged - JSUE Patch</a> and <a href="https://www.nexusmods.com/newvegas/mods/77945" target="_blank">Essential Vanilla Enhancements Merged - Mojave Arsenal Patch</a> for later mod compatibility (don't enable them for now) </li>
+                </ul> Compilation of many smaller gameplay-related mods, all updated, fixed, and optimized to work together. </p>
+            </div>
+            <!-- DLC Enhancements -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/73803" target="_blank">
+                        <h2 id="essential_dlc"> Essential DLC Enhancements Merged </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - Essential DLC Enhancements</b></li>
+                </ul> Merge of many gameplay improvements for the DLCs, all updated and fixed. </p>
+            </div>
+            <!-- Immersion Mods Merged -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/75283" target="_blank">
+                        <h2 id="iqo"> Immersion Mods Merged </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - Immersion Mods Merged </b></li>
+                    <li>In the installer add the <strong>Followers Formula Redone</strong> patch for later compatiblity.</li>
+                </ul> Similar to the above two mods with immersion-focused changes. </p>
+            </div>
+            <!-- NV Animations for Not Animated Containers -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/72495" target="_blank">
+                        <h2 id="containers"> NV Animations for Not Animated Containers </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - NV Animations for Not Animated Containers </b></li>
+                </ul> Adds container opening animations to containers without them. </p>
+            </div>
+            <!-- NV Compatibility Skeleton-->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/68776" target="_blank">
+                        <h2 id="skeleton"> NV Compatibility Skeleton </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - NVCS Installer </b></li>
+                    <li>When installing use the default settings</li>
+                </ul> Updated skeleton for compatibility with the below and future mods. </p>
+            </div>
+            <!-- Ragdolls -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/59147" target="_blank">
+                        <h2 id="iqo"> Ragdolls </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - Ragdolls </b></li>
+                    <li>In the installer add the <strong>Followers Formula Redone</strong> patch for later compatiblity.</li>
+                    <li>Additionally install <a href="https://www.nexusmods.com/newvegas/mods/75268?tab=files" target="_blank">Sighourn's Ragolls YUP Patch</a> for compatibility with YUP</li>
+                </ul> Overhauls NPC animations so they react to your gunshots and ragdoll realistically. A huge immersion booster that’s very vanilla-friendly. </p>
+            </div>
+            <!-- ISControl Enabler -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/75417" target="_blank">
+                        <h2 id="is_control"> ISControl Enabler </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - ISControl ESPless FULL</b></li>
+                </ul> Dynamically adds ISControl node system animation support and easy per-weapon sights adjustment. Prerequisitve for the below section.</p>
+            </div>
+            <!-- kNVSE -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/71336" target="_blank">
+                        <h2 id="knvse"> kNVSE Animation Plugin </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - kNVSE</b></li>
+                </ul> Resource for expanding and improving the game's limited animation system. Prerequisitve for the below section.</p>
+            </div>
+            <!-- Combat Mechanic Improvements -->
+            <div class="section">
+                <p>
+                    <h2 id="combat_mechanic_improvements"> Combat Mechanic Improvements </h2>
+                The below mods combined will improve the fidelity of your player movement, enhance the camera and replace all vanilla weapon animations for a more responsive feel. They require the ISControlEnabler and kNVSE utilities installed above.
+                <h2 class="install">Installation instructions:</h2>
+                Install the <strong>Main File</strong> for these mods.
+                <ul>
+                    <a href="https://www.nexusmods.com/newvegas/mods/55334?tab=description" target="_blank" rel="noopener">Enhanced Camera</a>
+                    <a href="https://www.nexusmods.com/newvegas/mods/72235?tab=description" target="_blank" rel="noopener">Simple 3rd Person Camera Improvements</a> - press C to switch shoulders in third person
+                    <a href="https://www.nexusmods.com/newvegas/mods/64333" target="_blank" rel="noopener">Diagonal movement</a>
+                    <a href="https://www.nexusmods.com/newvegas/mods/71940" target="_blank" rel="noopener">360 Movement</a> - <b>disable Better Auto Walk in Tweaks</b>
+                    <a href="https://www.nexusmods.com/newvegas/mods/71373?tab=files" target="_blank" rel="noopener">Walking Inertia</a> - makes walking ramp up rather than have you instantly Minecraft move
+                    <a href="https://www.nexusmods.com/newvegas/mods/71852?tab=files" target="_blank" rel="noopener">Viewmodel Recoil</a> - adds first person recoil
+                    <a href="https://www.nexusmods.com/newvegas/mods/79295" target="_blank" rel="noopener">Blended Locomotion</a> - better weapon movement when aiming down sites etc
+                    <a href="https://www.nexusmods.com/newvegas/mods/64335" target="_blank" rel="noopener">B42 Weapon Inertia</a> - weapon moves in the direction you look around
+                    <a href="https://www.nexusmods.com/newvegas/mods/70599?tab=files" target="_blank" rel="noopener">FNV Clean Animations</a> - also install Update Files - FNV Clean Animations - Update 2.2
+                    <a href="https://www.nexusmods.com/newvegas/mods/77429" target="_blank" rel="noopener">FNV Clean Animations Reborn</a> - install 1. Blended Locomotion and Iron Sights Alignment
+                    <a href="https://www.nexusmods.com/newvegas/mods/69403?tab=files" target="_blank" rel="noopener">Dedicated Weapon Animations (kNVSE)</a><b> - enable Auto Weapons No Firing Delay in Tweaks</b>
+                    <a href="https://www.nexusmods.com/newvegas/mods/79146?tab=files" target="_blank" rel="noopener">Butcher Pete Complete</a> - install 1. (Hitman Locomotion) only
+                    <a href="https://www.nexusmods.com/newvegas/mods/75909?tab=files" target="_blank" rel="noopener">Unarmed Animations</a>
+                    <a href="https://www.nexusmods.com/newvegas/mods/73480?tab=files" target="_blank" rel="noopener">Melee VATS Animation Restoration</a>
+                </ul>
+                </p>
+            </div>
+            <!-- Laser Weapon Iron Sights -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/70790" target="_blank">
+                        <h2 id="laser_sights"> Laser Weapon Iron Sights </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <blockquote>If you're planning to install the Gameplay+ Collection, install the Gun Runners Merged variants listed below as Mojave Arsenal will merge GRA weapons into the vanilla items list. Otherwise download the variants that don't have 'Gun Runner's Arsenal Merged' at the end.</blockquote>
+                <ul>
+                    <li><b>Main File - Laser Weapon Iron Sights - Gun Runner's Arsenal Merged </b></li>
+                    <li><b>Main File - Plasma Weapon Iron Sights - Gun Runner's Arsenal Merged </b></li>
+                </ul> 
+                Adds iron sights to laser and plasma weapons which don't have them by default. </p>
+            </div>
+            <!-- Immersive Recoil -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/61973" target="_blank">
+                        <h2 id="recoil"> Immersive Recoil </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - Immersive Recoil 2.4.1</b></li>
+                </ul> 
+                Adds realistic recoil to weapons when firing them. </p>
+            <blockquote>You may find the default recoil quite extreme on some weapons like the Revolver. You can tick the Custom Data checkbox in the MCM menu for Immersive Recoil to customise the recoil multipler per weapon or per ammo type. You may have to de-equip and equip your weapon for the right weapon to appear in that menu. I correct this on a weapon-by-weapon basis as I notice weapons that seem too extreme. </blockquote>
+            </div>
+            <!-- Consistent Spread - Firearms Accuracy and Wobble Fix -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/77974" target="_blank">
+                        <h2 id="spread"> Consistent Spread - Firearms Accuracy and Wobble Fix </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - Consistent Spreadv1.1</b></li>
+                </ul> 
+                Fixes gun wobble and weapon spread to be more predictable.</p>
+            </div>
+            <!-- Gore Dismember and Explode Edits LE -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/77452" target="_blank">
+                        <h2 id="gore"> Gore Dismember and Explode Edits LE </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - Gore Dismember and Explode Edits LE</b></li>
+                </ul> 
+                Changes how gore dismemberment and explosions are handled so it only happens for weapons where it makes sense i.e. small weapons like pistols can’t blow up arms etc.</p>
+            </div>
+            <!-- No Repair In Combat -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/75948" target="_blank">
+                        <h2 id="no_combat_repair"> No Repair in Combat </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - No Repair in Combat </b></li>
+                </ul> Disables repairing in combat for a minor immersion and difficulty boost. Some code exists suggesting this was originally considered by Obsidian. </p>
+            </div>
+            <!-- Less Accurate NPC's NVSE -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/61973" target="_blank">
+                        <h2 id="laNPCs"> Less Accurate NPC's NVSE </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - Less Accurate NPCs</b></li>
+                </ul> 
+                NPCs by default have extremely accurate aim. This mod fixes that. You can customise how it works by right clicking on the mod in Vortex->Open in File Manager, then open <strong>NVSE/plugins/scripts/gr_NPCAccuracy.txt.</strong> Change the <strong>fNPCMaxGunWobbleAngle</strong> value to whatever you like. The default is 15 and it goes up to 130. I've set it to 45 as that to me strikes the right difficulty balance. If Vortex provides any notification about external file changes, elect to keep the changes.</p>
+            </div>
+            <!-- Point That Somewhere Else -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/73938" target="_blank">
+                        <h2 id="ptse"> Point That Somewhere Else </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - Point That Somewhere Else</b></li>
+                </ul> 
+                Adds GTA-like behaviour where pointing your gun at NPCs will make them aggressive or flee with a cooldown period where you can stop being a dick. Awesome imemrsion booster and much better than them doing nothing at all when you aim at NPCs.</p>
+            </div>
+            <!-- Miscellaneous Improvements-->
+            <div class="section">
+                <p>
+                    <h2 id="misc_mods"> Miscellaneous Improvements </h2>
+                The below mods are specific, vanilla-friendly tweaks.
+                <h2 class="install">Installation instructions:</h2>
+                Install the <strong>Main File</strong> for these mods.
+                <ul>
+                    <li><a href="https://www.nexusmods.com/newvegas/mods/77220?tab=description" target="_blank">Dialogue DoF Disabler</a> - removes background blur when talking to characters for an immersion boost</li>
+                    <li><a href="https://www.nexusmods.com/newvegas/mods/64093" target="_blank">Beyond the Beef Tweaks</a> - player choice-related improvements to this quest line</li>
+                    <li><a href="https://www.nexusmods.com/newvegas/mods/37355" target="_blank">Glowing Star Bottle Cap</a> - adds a glow to an easily missable quest collectible</li>
+                    <a href="https://www.nexusmods.com/newvegas/mods/70118" target="_blank">This Isn't Goodbye</a> - gives followers a more natural 'see you later'-type response when dismissing them rather than a dramatic farewell speech</p>
+                    <li><a href="https://www.nexusmods.com/newvegas/mods/76970" target="_blank">Footsteps Volume Fixes</a> - makes the footstep volume more consistent but more of a tweak than a bug</li>
+                    <li><a href="https://www.nexusmods.com/newvegas/mods/69245" target="_blank">Securitrons On Alert</a> - Securitron faces change when attacking. After installing open the .ini file within config by right clicking→Open in FIle Manager, then set <strong>bRedScreenOnCombat</strong> to 0 to disable their faces turning red in combat (IMO Securitrons having colour faces feels a bit out of place given their 50s TV screen tech)</li>
+                </ul>
+                </p>
+            </div>
+            <!-- Brave New World -->
+            <div class="section">
+                <p>
+                    <blockquote>Please note that this mod requires you to start a new save before its changes will work. Brave New World will not activate in pre-existing saves.</blockquote>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/69562" target="_blank">
+                        <h2 id="bnw"> Brave New World </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - Brave New World</b></li>
+                    <li>Select the Voices Only option to ensure compatibility with future mod selections</li>
+                </ul> 
+                The Mojaves' huge number of characters meant Obsidian had their small number of voice actors record many, many lines of dialogue for many roles. They're excellent, but it can weaken immersion recognising the same voices for so many different faces. This expertly directed mod adds 145 carefully auditioned professional voice-overs for the most memorable minor characters. They also redesigned their faces. After playing with this enabled on a new playthrough the quality of the voice acting blew me away, so I moved it to this earlier section of the Collections since it makes such a big immersion difference. </p>
+            </div>
+            <!-- Anon2971's Immersive Stewie Tweaks -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/79583" target="_blank">
+                        <h2 id="anon2971_tweaks"> Anon2971's Immersive Stewie Tweaks </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - Anon2971's Immersive Stewie Tweaks</b></li>
+                </ul> 
+                Various extra Stewie Tweaks options from myself designed to compliment Essentials INI. Adds a mixture of quality of life changes, hotkeys and gameplay difficulty enhancers. I'll likely update this in the future as Stewie Tweaks adds more features. Here are the key gameplay changes and full ones can be downloaded via <strong>Optional Files</strong>:
+                <ul>
+                    <li>Hide HUD key - I've set this to hide the compass by pressing C as with my UI setup I like making the compass visible in exteriors but hidden for interiors. It is otherwise marked as Always On via Immersive HUD. Adjust key manually as you wish</li>
+                    <li>Open Map Key - set to M by default to save you having to open your Pipboy and switch to that menu. I also enabled Show Local Map in interiors. Adjust key manually as you wish. I didn't enable the Pipboy Items key as the logical selection, i, clashes with the default Immersive HUD key and I can't think of a better key at the moment</li>
+                    <li>Radio Skip Song Key - pressing [ will let you skip the currently playing radio song if you're tired of hearing it. Adjust key manually as you wish</li>
+                    <li>Fallout 76 Encumbrance - when you're over-encumbered your Action Points will be used for some movement until you run out. You still won't be able to sprint until you drop some items</li>
+                    <li>No Skill Tags - some dialogue options are a skill check giving you alternative solutions if you have a high enough relevant skill. By default it specifies which skill is tested and how many points you need, allowing you to easily jump back a save and boost that stat via levelling up or temporarily with drugs or magazines. Turning this tweak on covers the skill check label and skill value you need which improves immersion since dialogue doesn&rsquo;t explicitly say when your skills are checked, but the lines are written in such a way that they imply a skill may be used. The skill check text changes if you have enough points or not, so by reading carefully you can infer which dialogue is a skill check. By default I've made it show the Skill only and no skill number value so skill checks are a bit more explicit for first time players, but you can cover it entirely for maximum immersion via changing the option in the Tweaks menu</li>
+                    <li>Hide Enemies on Compass with 'Show firing enemies' ticked and No Compass Pips If Not in Danger - hides NPC compass icons unless they're shooting at you for added immersion</li>
+                    <li>Robotic Companions Heal With Scrap Metal</li>
+                    <li>Revive Unconscious Companions - use Stimpacks to revive unconscious companions</li>
+                    <li>Pause Holotapes - click on a holotape to pause it, double click to unpause</li>
+                    <li>Fallout 76 Encumbrance &ndash; you can use AP for movement when over-encumbered</li>
+                    <li>Barter Affects Repair Costs - self-explanatory. Makes Barter more useful</li>
+                    <li>Remember Bobby Pin Health - the health of your Bobby pins is remembered across saves. You should be a bit more careful when lockpicking now</li>
+                    <li>No Scale NPC Damage Resistance By Condition and No Scale NPC Damage Threshold By Condition - difficulty tweak making it so when you attack enemies it calculates your damage as if they're wearing brand spanking new armor. There's a similar option for their weapon damage. Use or don't as you like</li>
+                </ul>
+                </p>
+            </div>
+            <div>
+                <p>
+                    <hr>
+                    <a href="./hud.html" id="previous"><img class="navigationArrow left mirror" src="./img/arrow.webp" alt="Back Arrow"></a>
+                    <a href="./gameplay-plus.html" id="next"><img class="navigationArrow right" src="./img/arrow.webp" alt="Forward Arrow"></a>
+                </p>
+            </div>
+            </p>
+        </div>
+        <!-- Right Sidebar -->
+        <div id="sidenavRight">
+            <p>
+            <ul>
+                <li>
+                    <a href="#gameplay_hd">Collection 4/10: Gameplay HD</a>
+                </li>
+                <li>
+                    <a href="#combat_mechanic_improvements">Combat Mechanic Improvements</a>
+                </li>
+                <li>
+                    <a href="#misc_mods">Miscellaneous Improvements</a>
+                </li>
+                <li>
+                    <a href="#anon2971_tweaks">Anon2971's Immersive Stewie Tweaks</a>
+                </li>
+            </ul>
+            </p>
+        </div>
+    </body>
+
+</html>
