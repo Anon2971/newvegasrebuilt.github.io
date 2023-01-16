@@ -167,9 +167,9 @@ SOFTWARE.
                     <blockquote>The previous page discussed <a href="./vortex.html#profiles" target="_blank">Vortex Profiles</a> for managing the mods you elect to install alongside relevant settings. I recommend you have the following 4 Vortex Profiles containing these Collection combinations to switch between them as you wish:
                         <ul>
                             <li>Vanilla (Default renamed) - the untouched original game.</li>
-                            <li>Rebuilt: Core - Gopher's Stable New Vegas + UI alongside Collections 1-4 + 7. <strong>Use primarily this one if you've never played New Vegas before.</strong> This combination of Collections will fix bugs, optimise performance, upres the UI, restore missing content and smoothen the gameplay as originally designed without dramatically changing it.</lI>
+                            <li>Rebuilt: Core - Gopher's Stable New Vegas + UI alongside Collections 1-4 + 7. <strong>Use this one first if you've never played New Vegas before.</strong> This combination of Collections will fix bugs, optimise performance, upres the UI, restore missing content and smoothen the gameplay as originally designed without dramatically changing it.</lI>
                             <li>Rebuilt: Enhanced - Gopher's Stable New Vegas + UI alongside Collections 1-7, 9 and 10a. Gameplay, lighting, NPC and location overhauls including Functional Post Game Ending skipping graphics for performance concerns.</lI>
-                            <li>Rebuilt: Full: Everything in this guide. Please note the Graphics collections are likely to impact performance negatively. Don't forget to generate your LOD files as outlined <a href="./lod.html" target="_blank">in the LOD Guide</a>.</lI>
+                            <li>Rebuilt: Full: Everything in this guide. Please note the Graphics collections are likely to impact performance. Don't forget to generate your LOD files as outlined <a href="./lod.html" target="_blank">in the LOD Guide</a>.</lI>
                 </p>
             </div>         
             <!-- File Conflicts and Mod Cycles -->
@@ -182,14 +182,14 @@ SOFTWARE.
                 <img src="./img/mod management unresolved file conflicts.webp" alt="Vortex Unresolved File Conflicts screenshot" style="max-width:50%;height:auto;">
                 <p>Clicking ‘more’ will display the Mod Rules box asking which of the conflicting mods should be loaded first, often suggesting the order with a ‘(suggested)’ marker. <b>The more important mod should be installed after so it overrides the conflicting mod.</b> For example, if a UI mod clashes with YUP you’ll want to have the UI mod installed after to make sure the UI changes override YUP.</p>
                 <img src="./img/mod management file conflicts.webp" alt="Vortex File Conflicts screenshot" style="max-width:50%;height:auto;">
-                <p>In the above example a new Pipboy replacement mod overrides all files it conflicts with so it correctly replaces the Pipboy.</p>
+                <p>In the example above, a new Pipboy replacement mod overrides all files it conflicts with so it correctly replaces the Pipboy.</p>
                 <p>The Vortex suggestion is generally accurate, but there’s a few cases where I'll make specific suggestions. More recent mods are generally better.</p>
                 <p>As you install more mods, mod cycles will appear. Vortex generates mod installation order rules which can trigger loops as your mod list get complex. Vortex will say <strong>‘There are mod cycles’</strong> when this happens and not let you deploy until this has been resolved. A pop-up window will appear showing the mods as nodes with arrowed lines signalling the file conflict install direction leading to circular install loops.</p>
                 <img src="./img/mod management mod cycles.webp" alt="Vortex Mood Cycle screenshot" style="max-width:50%;height:auto;">
                 <p>Right clicking on a node and then clicking ‘Highlight Cycle’ will highlight that mod’s particular loop. You should fix mod cycles gradually, mod by mod, by right clicking on an individual line within the cycle->’Flip Rule’ to change the mod installation order. <b>Fix mod cycles by priority.</b> For instance, you can confidently let textures from texture packs overwrite YUP textures. Repeat this until the window closes, then press the ‘Deploy Mods’ button at the top.</p>
                 <img src="./img/mod management deploy mods.webp"  style="max-width:15%;height:auto;">
                 <p>One shortcut is to right click on the mod you consider the most obviously essential within a particular cycle, then click ‘Load Last Among Connected’ to make it override all the others. <b>Be aware ‘Load Last Among Connected’ is a bit of a brute-force solution that may break things. Use at your own discretion.</b></p>
-                <p>You can manage specific file conflicts per mod by right clicking the mod→<strong>’Manage File Conflicts’</strong>. You can click the family tree-like icon labelled <strong>'Manage Rules’</strong> at the top (seen in the screenshot above to the left of 'Deploy Mods' to adjust your overall mod file conflict rules at any time.</p>
+                <p>You can manage specific file conflicts per mod by right clicking the mod→<strong>’Manage File Conflicts’</strong>. You can click the family tree-like icon labelled <strong>'Manage Rules’</strong> at the top (seen in the screenshot above to the left of 'Deploy Mods') to adjust your overall mod file conflict rules at any time.</p>
                 </p>
             </div>
             <!-- Testing -->
@@ -198,7 +198,7 @@ SOFTWARE.
                     <a href="#testing">
                         <h2 id="testing"> Testing </h2>
                     </a>
-                    <p>Before installing any Collections or individual section of this guide, start a new game with zero mods whilst in the <strong>Vanilla</strong> profile, saving in Doc Mitchell’s house immediately after using the Vigor Tester (stat creation) before you go outside. Load it up after each mod section to test if everything works as expected. Saving there lets you test interior loading, exterior loading when you exit the house, NPC interaction (Doc Mitchell) and combat (the NPCs immediately outside) quickly. This should cover all aspects of New Vegas that this mod guide may impact. It would be good practise to load up this save and test New Vegas after installing each individual Collection.</p>
+                    <p>Before installing any Collections or individual section of this guide, start a new game with zero mods whilst in the <strong>Vanilla</strong> profile, saving in Doc Mitchell’s house immediately after using the Vigor Tester (stat creation) before you go outside. Switch to the Vortex profile you plan to use, add your moads, then load that vanilla save up after each batch of mods you install manually or via the Collections to test if everything works as expected. Saving there lets you test interior loading, exterior loading when you exit the house, NPC interaction (Doc Mitchell) and combat (the NPCs immediately outside) quickly. This should cover all aspects of New Vegas that this mod guide may impact. It would be good practise to load up this save and test New Vegas after installing each individual Collection.</p>
                     <blockquote>Please be aware that New Vegas may still crash unpredictably even with bug fixes and performance optimisations installed. Autosaving is also known to cause problems. Turn off autosaves in Settings and manually save regularly to avoid crashes causing save corruption.</blockquote>
                 </p>
             </div> 
@@ -217,15 +217,15 @@ SOFTWARE.
                         <h3 id="suggested-plugin-mergers">Suggested Plugin Mergers</h3>
                     </a>
                         <blockquote>If you hit the 255 plugin limit, start by recreating my suggested mergers listed below when they apply to the Collections you've chosen to install.</blockquote>
-                        <p>Here are my successful (working) merged plugins. All these mods appear later in the guide, so don’t worry if this list doesn’t make sense to you yet. I’m just mentioning my later findings at this earlier stage of the guide if you encounter the 255 limit issue whilst you set up. Notice how none of these merges include the mods they're patching as the plugins will be looking for the .esp plugins they patch. Merging the .esp plugins that they patch alongside them would break this as they suddenly wouldn't be able to see the .esp they're trying to patch. If you add any additional plugins to your mergers via zMerge, you should right click on the Mod in Vortex and click <strong>Refresh Content</strong> so the changes are updated, then accept any changes (Use Newer Files and delete old ones).</p>
+                        <p>Here are my successful (working) merged plugins. All these mods appear later in the guide, so don’t worry if this list doesn’t make sense to you yet. I’m just mentioning my later findings at this earlier stage of the guide if you encounter the 255 limit issue whilst you set up. Notice how none of these merges include the mods they're patching as the plugins will be looking for the .esp plugins they patch. Merging the .esp plugins that they patch alongside them would break this as they suddenly wouldn't be able to see the .esp they're trying to patch. If you add any additional plugins to your mergers via zMerge, you should right click on the Mod in Vortex→<strong>Refresh Content</strong> so the changes are updated, then accept any changes (Use Newer Files and delete old ones).</p>
                         <p><b>Merging Too Many Quest Markers and Brave New World patches broke both mods, so don't merge those.</b></p>
-                        <p>FNV Weapons Rebalanced Patches.esp (Fallout New Vegas Weapons Rebalanced)</p>
+                        <p>FNV Weapons Rebalanced Patches.esp (for Fallout New Vegas Weapons Rebalanced)</p>
                         <ul>
                             <li>FNVWR Nerf</li>
                             <li>FNVWR Unofficial Patch Plus NVSE Patch</li>
                             <li>FNVWR WMIM Patch</li>
                         </ul>
-                        <p>IQO Patches.esp (Improved Quest Objectives)</p>
+                        <p>IQO Patches.esp (for Improved Quest Objectives)</p>
                         <ul>
                             <li>IQO [AMF]</li>
                             <li>IQO [LQE]</li>
@@ -251,7 +251,7 @@ SOFTWARE.
                                 <li>Ragdolls YUP Patch</li>
                                 <li>Weapon Blur Effects</li>
                             </ul>
-                        <p>NVR2R Patches.esp (New Vegas Revised 2 Redesigned)</p>
+                        <p>NVR2R Patches.esp (for New Vegas Revised 2 Redesigned)</p>
                         <ul>
                             <li>NVR2 - YUP Patch</li>
                             <li>NVR2 - BMW Patch</li>
@@ -280,7 +280,7 @@ SOFTWARE.
                             <li>AWSOME Sounds Overhaul</li>
                             <li>Aim Down Sounds - Backpack - Jump Impact Effects</li>
                         </ul>
-                        <p>SLRF Patches.esp (Strip Lights Region Fix)</p>
+                        <p>SLRF Patches.esp (for Strip Lights Region Fix)</p>
                         <ul>
                             <li>Strip Lights Region Fix - Legion Quests Expanded</li>
                             <li>Strip Lights Region Fix - Distant Water Jets</li>
@@ -291,7 +291,7 @@ SOFTWARE.
                     <a href="#merged-plugin-load-order">
                         <h3 id="merged-plugin-load-order">Merged Plugin Load Order</h3>
                     </a>
-                    <p>Finally, you should ensure your merged plugins are loaded in the right order. Clicking the + icon on the left hand side will show the Vortex ‘Plugins’ page which uses LOOT to automatically optimise the order your mod plugins will be loaded in. <b>Check the ‘Load order’ number next to the plugins you have merged (which should automatically disable after zEdit has generated your merged plugin), then make sure your merged plugin is loaded in a similar position. i.e. my Strip Lights Region Fix Patches merged plugin loads immediately after Strip Lights Region Fix.</b> Strip Lights Legion Fix is placed near the bottom of my load order since it has patches for many other mods at vastly different order positiions.
+                    <p>Finally, you should ensure your merged plugins are loaded in the right order. Clicking the + icon on the left hand side will show the Vortex ‘Plugins’ page which uses LOOT to automatically optimise the order your mod plugins will be loaded in. <b>Check the ‘Load order’ number next to the plugins you merged, then make sure your merged plugin is loaded in a similar position. i.e. my Strip Lights Region Fix Patches merged plugin loads immediately after Strip Lights Region Fix.</b> Strip Lights Legion Fix is placed near the bottom of my load order since it has patches for many other mods at vastly different order positiions.
                 </p>    
             </div>
             <div>
