@@ -32,280 +32,241 @@ SOFTWARE.
         <link rel="icon" href="img/logo.webp">
         <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
         <script src="javascript.js"></script>
-        <title>Visuals | Viva New Vegas</title>
-        <meta name="description" content="Various mods to improve the game's visuals without making any drastic stylistic changes or decreasing performance/stability.">
+        <title>NPCs | New Vegas Rebuilt</title>
+        <meta name="description" content="Mods overhauling the lighting of New Vegas.">
         <meta name="twitter:card" value="summary">
-        <meta property="og:title" content="Viva New Vegas" />
+        <meta property="og:title" content="New Vegas Rebuilt" />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://vivanewvegas.github.io/" />
+        <meta property="og:url" content="https://newvegasrebuilt.github.io/" />
         <meta property="og:image" content="img/logo.webp" />
-        <meta property="og:description" content="Various mods to improve the game's visuals without making any drastic stylistic changes or decreasing performance/stability." />
+        <meta property="og:description" content="Mods overhauling the lighting of New Vegas." />
     </head>
 
     <body>
-        <div>
-            <!-- Titlebar -->
-            <div class="titlecontainer">
-                <div id="sideButton" onclick="toggleNav()">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-                <img src="./img/logo.webp" alt="Logo" />
-                <a href="./index.html"> Viva New Vegas </a>
-                <div class="guideLinks">
-                    <a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands </a>
-                    <a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4 </a>
-                    <a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition </a>
-                    <a href="https://gloryofcyrodiil.github.io/" target="_blank" rel="nofollow">Oblivion </a>
-                </div>
+        <!-- Titlebar -->
+        <div class="titlecontainer">
+            <div id="sideButton" onclick="toggleNav()">
+                <i class="fa-solid fa-bars"></i>
             </div>
-            <!-- Left Sidebar -->
-            <div id="sidenavLeft">
-                <p>
-                <div>
-                    <ul>
-                        <li>
-                            <a href="./index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="./intro.html">Introduction</a>
-                        </li>
-                        <li>
-                            <a href="./setup.html">Initial Setup</a>
-                        </li>
-                        <li>
-                            <a href="./mo2.html">MO2</a>
-                        </li>
-                        <li>
-                            <a href="./essentials.html">Utilities</a>
-                        </li>
-                        <li>
-                            <a href="./bugfix.html">Bug Fixes</a>
-                        </li>
-                        <li>
-                            <a href="./hud.html">User Interface</a>
-                        </li>
-                        <li>
-                            <a href="./gameplay-hd.html">Gameplay</a>
-                        </li>
-                        <li>
-                            <a href="./npcs.html">Overhauls</a>
-                        </li>
-                        <li>
-                            <a href="./content.html">Content</a>
-                        </li>
-                        <li>
-                            <a href="./visuals.html" class="active">Visuals</a>
-                        </li>
-                        <li>
-                            <a href="./finish.html">Final Steps</a>
-                        </li>
-                        <li>
-                            <a href="./appendix.html">Appendix</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <hr>
-                    <ul>
-                        <li>
-                            <a href="./avoid-tools.html">Tools to Avoid</a>
-                        </li>
-                        <li>
-                            <a href="./avoid-mods.html">Mods to Avoid</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="guideLinks">
-                    <hr>
-                    <ul>
-                        <li>
-                            <a href="https://thebestoftimes.github.io/" target="_blank" rel="nofollow">Tale of Two Wastelands </a>
-                        </li>
-                        <li>
-                            <a href="https://themidnightride.github.io/" target="_blank" rel="nofollow">Fallout 4 </a>
-                        </li>
-                        <li>
-                            <a href="https://dragonbornsfate.github.io/" target="_blank" rel="nofollow">Skyrim Special Edition </a>
-                        </li>
-                        <li>
-                            <a href="https://gloryofcyrodiil.github.io/" target="_blank" rel="nofollow">Oblivion </a>
-                        </li>
-                    </ul>
-                </div>
-                <div id="footer">
-                    <ul>
-                        <li>
-                            <a href="https://github.com/VivaNewVegas/vivanewvegas.github.io" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://discord.gg/DhX5S27" target="_blank">
-                                <i class="fab fa-discord"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.patreon.com/vivanewvegas" target="_blank">
-                                <i class="fab fa-patreon"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a id="paypal" onclick="toggleDonationMenu()">
-                                <i class="fab fa-paypal"></i>
-                            </a>
-                            <div id="paypalMenu" style="display: none;">
-                                <a href="https://www.paypal.com/paypalme/qolore7" target="_blank">
-                                    Author - Qolore7
-                                </a>
-                                <a href="https://www.paypal.com/paypalme/VishVadeva50" target="_blank">
-                                    Maintainer - VishVadeva50
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                </p>
+            <img src="./img/logo.webp" alt="Logo" />
+            <a href="./index.html"> New Vegas Rebuilt </a>
+        </div>
+        <!-- Left Sidebar -->
+        <div id="sidenavLeft">
+            <p>
+            <div>
+                <ul>
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./intro.html">Introduction</a>
+                    </li>
+                    <li>
+                        <a href="./setup.html">Initial Setup</a>
+                    </li>
+                    <li>
+                        <a href="./vortex.html">Vortex</a>
+                    </li>
+                     <li>
+                        <a href="./mod-management.html">Mod Management</a>
+                    </li>
+                    <li>
+                        <a href="./essentials.html">Essentials</a>
+                    </li>
+                    <li>
+                        <a href="./hud.html">User Interface</a>
+                    </li>
+                    <li>
+                        <a href="./restored-content.html">Restored Content</a>
+                    </li>
+                    <li>
+                        <a href="./gameplay-hd.html">Gameplay HD</a>
+                    </li>
+                    <li>
+                        <a href="./gameplay-plus.html">Gameplay+</a>
+                    </li>
+                    <li>
+                        <a href="./npcs.html">NPCs</a>
+                    </li>
+                    <li>
+                        <a href="./visuals.html" class="active">Lighting</a>
+                    </li>
+                    <li>
+                        <a href="./finish.html">Final Steps</a>
+                    </li>
+                    <li>
+                        <a href="./appendix.html">Appendix</a>
+                    </li>
+                </ul>
             </div>
+            <div>
+                <hr>
+                <ul>
+                    <li>
+                        <a href="./avoid-tools.html">Tools to Avoid</a>
+                    </li>
+                    <li>
+                        <a href="./avoid-mods.html">Mods to Avoid</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="footer">
+                <ul>
+                    <li>
+                        <a href="https://github.com/newvegasrebuilt/newvegasrebuilt.github.io" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            </p>
+        </div>
             <!-- Content -->
             <div class="content">
                 <p>
                 <div class="section">
                     <p>
-                    <h1>Visuals</h1>
-                    <blockquote> There may be less visual mods than you may be used to with a modded game, but there is good reason for that. The game has a pretty unoptimized renderer, built on now 20 year old DirectX 9. <br>
-                        <br> Mesh replacers are often grossly unoptimized, which is disastrous, since the mesh pipeline is the main performance bottleneck. <br>
-                        <br> ENBs may make for pretty screenshots, but they are near-impossible to play with due to the many bugs, performance problems, and <a href="https://imgur.com/a/8UT356J" target="_blank">vision-obscuring effects</a> they use. <br>
-                        <br> Texture mods often support from being inadequately oversized, which leads to wasteful memory usage and increased loading times and stutter. They also create a great disparity between the new textures and the vanilla textures, both in quality and in style, making for some <a href="https://imgur.com/a/jMgRjBO" target="_blank">jarring texture transitions or seams</a>.
-                    </blockquote>
-                    <h2>Creating a Separator in MO2</h2>
-                    <ol>
-                        <li>Right-click the empty space in the left pane of MO2 and select <strong>Create Separator</strong>.</li>
-                        <li>Name the separator <strong>Visuals</strong>.</li>
-                    </ol>
-                    <!-- Faster Pip-Boy -->
-                    <div class="section">
-                        <p>
-                            <a class="link" href="https://www.nexusmods.com/newvegas/mods/67761" target="_blank">
-                                <h2 id="faster_pipboy"> Faster Pip-Boy Animation </h2>
-                            </a>
-                        <h2 class="install">Installation instructions:</h2>
-                        <ul>
-                            <li><b>Main File - Faster Pip-Boy Animation (2x) 1.0</b></li>
-                        </ul> Doubles the speed of the Pip-Boy opening animation. </p>
-                    </div>
-                    <!-- Anniversary Anim Pack -->
-                    <div class="section">
-                        <p>
-                            <a class="link" href="https://www.nexusmods.com/newvegas/mods/70158" target="_blank">
-                                <h2 id="anim_pack"> Anniversary Animation Pack </h2>
-                            </a>
-                        <h2 class="install">Installation instructions:</h2>
-                        <ul>
-                            <li><b>Main File - Anniversary Anim Pack</b></li>
-                        </ul> Includes three of Hitman's previous animation mods, <a href="https://www.nexusmods.com/newvegas/mods/67728" target="_blank">Subtle Camera Motion</a>, <a href="https://www.nexusmods.com/newvegas/mods/67760" target="_blank">Iron Sights Recoil Animations</a>, and <a href="https://www.nexusmods.com/newvegas/mods/67841" target="_blank">Fire Animation Variants</a>, as well as some new previously unreleased animations. </p>
-                    </div>
-                    <!-- Anniversary Anim Pack - General Bugfix -->
-                    <div class="section">
-                        <p>
-                            <a class="link" href="https://www.nexusmods.com/newvegas/mods/72320" target="_blank">
-                                <h2 id="anim_bugfix"> Anniversary Anim Pack - General Bugfix </h2>
-                            </a>
-                        <h2 class="install">Installation instructions:</h2>
-                        <ul>
-                            <li><b>Main File - AnniAnimPack_BugFix 1.3</b></li>
-                            <li><b>Main File - Bonus Patch</b> (When prompted, rename to Anniversary Anim Pack - General Bugfix - Bonus Patch)</li>
-                        </ul> Fixes many bugs/inconsistencies in Anniversary Anims Pack. </p>
-                    </div>
-                    <!-- B42 Weapon Inertia -->
-                    <div class="section">
-                        <p>
-                            <a class="link" href="https://www.nexusmods.com/newvegas/mods/64335" target="_blank">
-                                <h2 id="inertia"> B42 Weapon Inertia </h2>
-                            </a>
-                        <h2 class="install">Installation instructions:</h2>
-                        <ul>
-                            <li><b>Main File - B42 Inertia V1.2</b></li>
-                        </ul>Gives weapons realistic inertia movement. </p>
-                    </div>
-                    <!-- Compatibility Skeleton -->
-                    <div class="section">
-                        <p>
-                            <a class="link" href="https://www.nexusmods.com/newvegas/mods/68776" target="_blank">
-                                <h2 id="skeleton"> Compatibility Skeleton </h2>
-                            </a>
-                        <h2 class="install">Installation instructions:</h2>
-                        <ul>
-                            <li><b>Optional File - NVCS Vanilla Weights</b></li>
-                        </ul> Allows multiple mods that edit the skeleton mesh to work together, required for B42 Weapon Inertia. </p>
-                    </div>
-                    <!-- Improved LOD Noise -->
-                    <div class="section">
-                        <p>
-                            <a class="link" href="https://www.nexusmods.com/newvegas/mods/46451" target="_blank">
-                                <h2 id="improved_lod"> Improved LOD Noise Texture </h2>
-                            </a>
-                        <h2 class="install">Installation instructions:</h2>
-                        <ul>
-                            <li><b>Main File - Improved LOD noise Texture</b></li>
-                        </ul> Improves the generic LOD noise texture. </p>
-                    </div>
-                    <!-- ALT -->
-                    <div class="section">
-                        <p>
-                            <a class="link" href="https://www.nexusmods.com/newvegas/mods/79378" target="_blank">
-                                <h2 id="alt"> Atmospheric Lighting Tweaks </h2>
-                            </a>
-                        <h2 class="install">Installation instructions:</h2>
-                        <ul>
-                            <li><b>Main File - Atmospheric Lighting Tweaks - FNV</b></li>
-                        </ul> Makes changes to Image Spaces and Lighting Templates to give interiors a more dynamic and atmospheric look. </p>
-                    </div>
-                    <!-- DN Weathers -->
-                    <div class="section">
-                        <p>
-                            <a class="link performance" href="https://www.nexusmods.com/newvegas/mods/75437" target="_blank">
-                                <h2 id="dn"> Desert Natural Weathers </h2>
-                            </a>
-                        <h2 class="install">Installation instructions:</h2>
-                        <ul>
-                            <li><b>Main File - Desert Natural Weathers NV</b></li>
-                        </ul> Major overhaul to all of the weathers for the base game and DLCs. <blockquote> As visual mods are very subjective, not everyone will like DN Weathers. If you want an alternatives, I recommend checking out <a href="https://www.nexusmods.com/newvegas/mods/71404" target="_blank">Altitude</a>, <a href="https://www.nexusmods.com/newvegas/mods/67277" target="_blank">Yellow Goodbye</a>, or <a href="https://www.nexusmods.com/newvegas/mods/62481" target="_blank">Clarity</a>. Yellow Goodbye and Clarity aim for a much more vanilla style, mostly just removing the game's atmospheric tint. Meanwhile, Altitude aims to strike a balance between staying vanilla-friendly and being a complete overhaul. These three mods should have little to no performance loss, even on lower-end systems. </blockquote>
-                        </p>
-                    </div>
-                    <!-- A Little More Lamplight -->
-                    <div class="section">
-                        <p>
-                            <a class="link performance" href="https://www.nexusmods.com/newvegas/mods/69226" target="_blank">
-                                <h2 id="lamplight"> A Little More Lamplight </h2>
-                            </a>
-                        <h2 class="install">Installation instructions:</h2>
-                        <ul>
-                            <li><b>Main File - A Little More Lamplight</b></li>
-                        </ul> Enhances the vanilla streetlights and adds new ones around Outer Vegas, Freeside, and more. </p>
-                    </div>
-                    <!-- MoonlightNVSE -->
-                    <div class="section">
-                        <p>
-                            <a class="link" href="https://www.nexusmods.com/newvegas/mods/77683" target="_blank">
-                                <h2 id="moonlight"> MoonlightNVSE </h2>
-                            </a>
-                        <h2 class="install">Installation instructions:</h2>
-                        <ul>
-                            <li><b>Main File - MoonlightNVSE</b></li>
-                        </ul> Fixes moonlight by making the moon the light caster instead of the sun. </p>
-                    </div>
-                    <!-- High Res Bloom -->
-                    <div class="section">
-                        <p>
-                            <a class="link" href="https://www.nexusmods.com/newvegas/mods/77933" target="_blank">
-                                <h2 id="bloom"> High Resolution Bloom NVSE </h2>
-                            </a>
-                        <h2 class="install">Installation instructions:</h2>
-                        <ul>
-                            <li><b>Main File - High Resolution Bloom</b></li>
-                        </ul> Allows for customizable bloom resolution, making it possible to use resolutions other than vanilla's quarter one. </p>
-                    </div>
+                    <h1>Lighting</h1>
+                    <h2 id="collection_lighting">Collection 7/10: <a class="link" href="https://next.nexusmods.com/newvegas/collections/a1otx1" target="_blank">Lighting</a></h2>
+                    This section impacts primarily the lighting and should have a relatively minimal impact on NV performance. </p>
                 </div>
+                <!-- DN Weathers -->
+                <div class="section">
+                    <p>
+                        <a class="link performance" href="https://www.nexusmods.com/newvegas/mods/75437" target="_blank">
+                            <h2 id="dn"> Desert Natural Weathers </h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li><b>Main File - Desert Natural Weathers NV</b></li>
+                    </ul> Major overhaul to all of the weathers for the base game and DLCs. <blockquote> As visual mods are very subjective, not everyone will like DN Weathers. If you want an alternatives, I recommend checking out <a href="https://www.nexusmods.com/newvegas/mods/71404" target="_blank">Altitude</a>, <a href="https://www.nexusmods.com/newvegas/mods/67277" target="_blank">Yellow Goodbye</a>, or <a href="https://www.nexusmods.com/newvegas/mods/62481" target="_blank">Clarity</a>. Yellow Goodbye and Clarity aim for a much more vanilla style, mostly just removing the game's atmospheric tint. Meanwhile, Altitude aims to strike a balance between staying vanilla-friendly and being a complete overhaul. These three mods should have little to no performance loss, even on lower-end systems. </blockquote>
+                    </p>
+                </div>
+                <!-- ALT -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/newvegas/mods/79378" target="_blank">
+                            <h2 id="alt"> Atmospheric Lighting Tweaks </h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li><b>Main File - Atmospheric Lighting Tweaks - FNV</b></li>
+                    </ul> Makes changes to Image Spaces and Lighting Templates to give interiors a more dynamic and atmospheric look. </p>
+                </div>
+                <!-- Climate Control -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/newvegas/mods/77205" target="_blank">
+                            <h2 id="climate"> Climate Control NVSE </h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li><b>Main File - Climate Control NVSE</b></li>
+                        <li><b>Optional File - Longer Weather Transitions</b></li>
+                    </ul> Fixes bugs and adds utilities for weather mods. The optional mod makes weather transitions take longer for realism.</p>
+                </div>
+                <!-- Heat Haze -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/newvegas/mods/76286" target="_blank">
+                            <h2 id="heat"> Heat Haze </h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li><b>Main File - Heat Haze</b></li>
+                    </ul> Adds a distant heat haze visual effect during hot weather conditions. Uses Climate Control.</p>
+                </div>
+                <!-- Cloud Shadows -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/newvegas/mods/79147" target="_blank">
+                            <h2 id="cloud"> Cloud Shadows </h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li><b>Main File - Cloud Shadows</b></li>
+                    </ul> Changes Wasteland lighting when clouds are overhead. Great immersion tweak.</p>
+                </div>
+                <!-- Dusty Distance Redone -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/newvegas/mods/75183" target="_blank">
+                            <h2 id="ddr"> Dusty Distance Redone </h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li><b>Main File - Dusty Distance Redone</b></li>
+                        <li><b>Optional File - Dusty Distance Redone - 39k (no nights tweaks)</b></li>
+                    </ul> Adds a dusty haze effect to the Wasteland only impacting your long-range view to make the world feel more expansive. I recommend the 39k version as I find the 29k makes the world feel small and it's more distracting than beneficial.</p>
+                </div>
+                <!-- A Little More Lamplight -->
+                <div class="section">
+                    <p>
+                        <a class="link performance" href="https://www.nexusmods.com/newvegas/mods/69226" target="_blank">
+                            <h2 id="lamplight"> A Little More Lamplight </h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li><b>Main File - A Little More Lamplight</b></li>
+                    </ul> Enhances the vanilla streetlights and adds new ones around Outer Vegas, Freeside, and more. </p>
+                </div>
+                <!-- Strip Street Light Corrections -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/newvegas/mods/78906" target="_blank">
+                            <h2 id="sslc"> Strip Street Light Corrections </h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li><b>Main File - Strip Street Light Corrections</b></li>
+                    </ul> Strip street light corrections. </p>
+                </div>
+                <!-- MoonlightNVSE -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/newvegas/mods/77683" target="_blank">
+                            <h2 id="moonlight"> MoonlightNVSE </h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li><b>Main File - MoonlightNVSE</b></li>
+                    </ul> Fixes moonlight by making the moon the light caster instead of the sun. </p>
+                </div>
+                <!-- Night Sky Tweaks -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/newvegas/mods/77683" target="_blank">
+                            <h2 id="nst"> Night Sky Tweaks </h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li><b>Main File - Night Sky Tweaks</b></li>
+                    </ul> Improves night skylines for darkness and realism. </p>
+                </div>
+                <!-- Windows of the Mojave -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/newvegas/mods/67247" target="_blank">
+                            <h2 id="windows"> Windows of the Mojave </h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li><b>Main File - Windows of the Mojave</b></li>
+                    </ul> Adds interior windows where they don't match their exteriors. </p>
+                </div>
+                <!-- Standalone Cateye and nightvision effects from RWL -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/newvegas/mods/71471" target="_blank">
+                            <h2 id="cateye"> Standalone Cateye and nightvision effects from RWL </h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li><b>Main File - Cateye Improved Main</b></li>
+                    </ul> Improved night vision visual effects. </p>
+                </div>
+            </div>
                 <div>
                     <p>
                         <hr>
@@ -320,49 +281,49 @@ SOFTWARE.
                 <p>
                 <ul>
                     <li>
-                        <a href="#faster_pipboy">Faster Pip-Boy</a>
+                        <a href="#collection_lighting">Collection 7/10: Lighting</a>
                     </li>
-                    <li>
-                        <a href="#muzzle_lights">No Muzzle Lights</a>
-                    </li>
-                    <li>
-                        <a href="#anim_pack">Anniversary Anims</a>
-                    </li>
-                    <li>
-                        <a href="#anim_bugfix">Anniversary Anims Fix</a>
-                    </li>
-                    <li>
-                        <a href="#inertia">Weapon Inertia</a>
-                    </li>
-                    <li>
-                        <a href="#skeleton">Compatibility Skeleton</a>
-                    </li>
-                    <li>
-                        <a href="#improved_lod">Improved LOD Noise</a>
-                    </li>
-                    <li>
-                        <a href="#pipshading">Pip-Boy Shading Fix NVSE</a>
-                    </li>
-                    <li>
-                        <a href="#alt">Atmospheric Lighting Tweaks</a>
-                    </li>
-                    <li>
-                        <a href="#dn">DN Weathers</a>
-                    </li>
-                    <li>
-                        <a href="#lamplight">A Little More Lamplight</a>
-                    </li>
-                    <li>
-                        <a href="#moonlight">MoonlightNVSE</a>
-                    </li>
-                    <li>
-                        <a href="#bloom">High Res Bloom</a>
-                    </li>
+                    <ul>
+                        <li>
+                            <a href="#dn">DN Weathers</a>
+                        </li>
+                        <li>
+                            <a href="#alt">Atmospheric Lighting Tweaks</a>
+                        </li>
+                        <li>
+                            <a href="climate">Climate Control</a>
+                        </li>
+                        <li>
+                            <a href="heat">Heat Haze</a>
+                        </li>
+                        <li>
+                            <a href="cloud">Cloud Shadows</a>
+                        </li>
+                        <li>
+                            <a href="ddr">Dusty Distance Redone</a>
+                        </li>
+                        <li>
+                            <a href="#lamplight">A Little More Lamplight</a>
+                        </li>
+                        <li>
+                            <a href="#sslc">Strip Street Light Corrections</a>
+                        </li>
+                        <li>
+                            <a href="#moonlight">MoonlightNVSE</a>
+                        </li>
+                        <li>
+                            <a href="#nst">Night Sky Tweaks</a>
+                        </li>
+                        <li>
+                            <a href="#windows">Windows of the Mojave</a>
+                        </li>
+                        <li>
+                            <a href="#cateye">Standalone Cateye Effects</a>
+                        </li>
+                    </ul>
                 </ul>
                 </p>
             </div>
         </div>
-        </div>
     </body>
-
 </html>
