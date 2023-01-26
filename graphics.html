@@ -1,0 +1,765 @@
+<!--
+MIT License
+
+Copyright (c) VivaNewVegas
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="icon" href="img/logo.webp">
+        <script src="https://kit.fontawesome.com/baff4f2fd4.js" crossorigin="anonymous"></script>
+        <script src="javascript.js"></script>
+        <title>Graphics | New Vegas Rebuilt</title>
+        <meta name="description" content="Mods overhauling the graphics of New Vegas.">
+        <meta name="twitter:card" value="summary">
+        <meta property="og:title" content="New Vegas Rebuilt" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://newvegasrebuilt.github.io/" />
+        <meta property="og:image" content="img/logo.webp" />
+        <meta property="og:description" content="Mods overhauling the graphics of New Vegas." />
+    </head>
+
+    <body>
+        <!-- Titlebar -->
+        <div class="titlecontainer">
+            <div id="sideButton" onclick="toggleNav()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <img src="./img/logo.webp" alt="Logo" />
+            <a href="./index.html"> New Vegas Rebuilt </a>
+        </div>
+        <!-- Left Sidebar -->
+        <div id="sidenavLeft">
+            <p>
+            <div>
+                <ul>
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./intro.html">Introduction</a>
+                    </li>
+                    <li>
+                        <a href="./setup.html">Initial Setup</a>
+                    </li>
+                    <li>
+                        <a href="./vortex.html">Vortex</a>
+                    </li>
+                     <li>
+                        <a href="./mod-management.html">Management</a>
+                    </li>
+                    <li>
+                        <a href="./essentials.html">Essentials</a>
+                    </li>
+                    <li>
+                        <a href="./hud.html">User Interface</a>
+                    </li>
+                    <li>
+                        <a href="./restored-content.html">Restored Content</a>
+                    </li>
+                    <li>
+                        <a href="./gameplay-hd.html">Gameplay HD</a>
+                    </li>
+                    <li>
+                        <a href="./gameplay-plus.html">Gameplay+</a>
+                    </li>
+                    <li>
+                        <a href="./npcs.html">NPCs</a>
+                    </li>
+                    <li>
+                        <a href="./visuals.html">Lighting</a>
+                    </li>
+                    <li>
+                        <a href="./graphics.html" class="active">Graphics</a>
+                    </li>
+                    <li>
+                        <a href="./finish.html">Final Steps</a>
+                    </li>
+                    <li>
+                        <a href="./appendix.html">Appendix</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <hr>
+                <ul>
+                    <li>
+                        <a href="./avoid-tools.html">Tools to Avoid</a>
+                    </li>
+                    <li>
+                        <a href="./avoid-mods.html">Mods to Avoid</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="footer">
+                <ul>
+                    <li>
+                        <a href="https://github.com/newvegasrebuilt/newvegasrebuilt.github.io" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            </p>
+        </div>
+            <!-- Content -->
+            <div class="content">
+                <p>
+                <div class="section">
+                    <p>
+                    <h1>Graphics</h1>
+                    This section is dedicated to overhauling all graphics within New Vegas. It's split across two Collections - Graphics Core overhauls the essential elements whilst Graphics Extras overhauls smaller details.<br>
+                    <br>Newer texture packs should override older ones. <b>Open up the NVTF.ini (New Vegas Tick Fix) and ensure bModifyDirectXBehavior=1 and bUseDefaultPoolForTextures=1 so they work properly.</b><br>
+                    <br>Textures shouldn’t go above 2k as this can negatively impact performance due to NV’s rocky engine. You should generally have mods override File Conflicts in the order they are listed in this guide i.e. Poco Bueno should be installed on top of (After) NMC.</p>
+                    <blockquote>The creaky Gamebryo engine wasn't designed to handle large textures so well, so this section is very likely to impact your performance if you're playing on a lower-end PC such as myself. Feel free to carefully pick and choose the mods as you see fit. NMC + Poco Bueno + Superpele's Pack are the three I consider the most essential. Those combined will provide a major environmental facelift with relatively small performance impact since they're well-optimized textures. The Graphics Extras Collection should additionally have a relatively minimal impact on performance since it focuses on smaller objects only.</blockquote> 
+                </div>
+                <!-- Collection 8a/10: Graphics Core -->
+                <div class="section">
+                    <p>
+                        <h2 id="collection_graphics_core">Collection 8a/10: <a class="link" href="https://next.nexusmods.com/newvegas/collections/j5cssd" target="_blank">Graphics Core</a></h2>
+                        The following mods combined will overhaul the central visual elements of New Vegas - environmental textures, weapons, NPCs, their clothing and armors. This Collection contains all of the below mods.
+                    </p>
+                    <blockquote><b>You must follow the <a href="./lod.html" target="_blank">LOD guide</a> after installing this Collection to generate new Level of Detail graphic objects. Otherwise your distant visuals will significantly glitch out due to your newly installed textures replacing the vanilla ones.</b></blockquote>
+                </div>
+                <!-- NMC -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/newvegas/mods/43135" target="_blank">
+                            <h2 id="nmc"> NMC's Texture Pack </h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li><b>Main File - NMCs Textures NV LARGE Pack Part 1 of 3 FOR NMM</b></li>
+                        <li><b>Main File - NMCs Textures NV LARGE Pack Part 2 of 3 FOR NMM</b></li>
+                        <li><b>Main File - NMCs Textures NV LARGE Pack Part 3 of 3 FOR NMM</b></li>
+                        <li><b>Optional File - NMC New Vegas Patch for ALL Sized packs</b></li>
+                        <li><b>Optional File - Water Tower Clark County Fix</b></li>
+                        <li><b>Optional File - Naval Chair Fix</b></li>
+                        <li><b>Optional File - NMCs Texture pack WASHEDOUTWASTELAND Large and Medium</b></li>
+                    </ul> High quality, vanilla-esque and well-optimized texture pack upgrading most environmental textures. The optional files should be installed in the order above so they update their relavent files correctly.
+                    </p>
+                </div>
+                <!-- Poco Bueno -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/newvegas/mods/42028/" target="_blank">
+                            <h2 id="pb"> POCO BUENO Texture Pack </h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li><b>Main File - PocoBuenoTexturePackV5</b></li>
+                        <li><b>Optional File - PocoBueno Skeleton Transparency Fix</b></li>
+                    </ul> Another excellent texture pack covering many environmental textures not covered by NMC. You should override all NMC conflicts to avoid the packs clashing with one other in overlapping objects. </p>
+                    <blockquote>I would advise against installing the other pack from the same author, POCO OJO, as it contains 4k textures with a more complicated installation process.</blockquote>
+                </div>
+                <!-- Superpele's Disordered ReTexture Pack -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.gunetwork.org/t11883-fnv-superpele-s-disordered-retexture-pack-v2-0" target="_blank">
+                            <h2 id="superpele"> Superpele's Disordered ReTexture Pack </h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li>Create a GUN Network account, view the linked thread, then download the Mediafire zip and install it manually via Vortex</li>
+                    </ul> Another beautiful texture pack featuring super clean vanilla-esque textures primarily upgrading interiors. Accompanies NMC and POCO perfectly. Override all conflicts again.</p>
+                    <blockquote>I'll not be repeating the override instruction for future texture packs from this point. Generally texture packs should override all conflicts with other packs to prevent textures from one pack mis-matching with textures in another.</blockquote>
+                </div>
+                <!-- Wasteland Flora & Terrain Overhaul -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/newvegas/mods/46451" target="_blank">
+                            <h2 id="floverhaul"> Wasteland Flora & Terrain Overhaul </h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li><b>Main File - Wasteland Flora Overhaul - Vanilla tree replacer with LOD</b></li>
+                        <li><b>Optional File - UHQNV Rocks - Roads and Terrain Overhaul</b></li>
+                        <li><b>Optional File - Landscape Seam Fix</b></li>
+                    </ul> Improvements to the Mojave Desert fauna and terrain.
+                    </p>
+                </div>
+                <!-- Wasteland Flora & Terrain Overhaul -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/newvegas/mods/46451" target="_blank">
+                            <h2 id="floverhaul"> Wasteland Flora & Terrain Overhaul </h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li><b>Main File - Wasteland Flora Overhaul - Vanilla tree replacer with LOD</b></li>
+                        <li><b>Optional File - UHQNV Rocks - Roads and Terrain Overhaul</b></li>
+                        <li><b>Optional File - Landscape Seam Fix</b></li>
+                    </ul> Improvements to the Mojave Desert fauna and terrain.
+                    </p>
+                    <blockquote>The Main File I recommend is the Vanilla tree replacer because it only replaces the vanilla trees. The other Main File option adds many more which may have an impact on lower end PCs. Install that variation if you think your PC can handle the extra object rendering.</blockquote>
+                </div>
+                <!-- Vurt's Improved Plants -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/newvegas/mods/66898" target="_blank">
+                            <h2 id="vip"> Vurt's Improved Plants </h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li><b>Main File - Vurt's Improved Plants</b></li>
+                        <li><b>Optional File - Desaturated Textures</b></li>
+                    </ul> Replaces lower quality plants from the above overhaul mod.
+                    </p>
+                </div>
+                <!-- Improved LOD Noise -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/newvegas/mods/46451" target="_blank">
+                            <h2 id="improved_lod"> Improved LOD Noise Texture </h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li><b>Main File - Improved LOD noise Texture</b></li>
+                    </ul> Improves the generic LOD noise texture.
+                    </p>
+                </div>
+                <!-- F4NV Billboards -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/newvegas/mods/72164" target="_blank">
+                            <h2 id="billboards"> F4NV Billboards </h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li><b>Main File - F4NV Billboards</b></li>
+                    </ul> Replaces Mojave Wasteland billboards with high quality ones matching the original designs.
+                    </p>
+                </div>
+                <!-- Limestone Quarry Rock Redux 2k -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/newvegas/mods/70224" target="_blank">
+                            <h2 id="improved_lod"> Limestone Quarry Rock Redux 2k </h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li><b>Main File - Limestone Quarry Rock Redux 2k</b></li>
+                    </ul> Replaces the rock textures in Quarry Junction that otherwise look noticably low-res.
+                    </p>
+                </div>
+                <!-- Weapon Mesh Improvement Mod -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/newvegas/mods/65052" target="_blank">
+                            <h2 id="wmim"> Weapon Mesh Improvement Mod </h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li><b>Main File - Weapon Mesh Improvement Mod</b></li>
+                    </ul> Reworks all weapon meshes for bug fixes.
+                    </p>
+                </div>
+                <!-- Simplified Weapon Retexture Project -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/newvegas/mods/73675" target="_blank">
+                            <h2 id="swrp"> Simplified Weapon Retexture Project </h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li><b>Main File - Simplified Weapon Retexture Project</b></li>
+                        <li><b>Optional File - SWRP - No Repeater Peep Sight</b></li>
+                        <li>Download the Main File from <a href="https://www.nexusmods.com/newvegas/mods/78131" target="_blank">Simplified Weapon Retexture Project 45 Auto SMG Bullet Texture Fix</a> to fix a bug</li>
+                        <li>Download the Main File from <a href="https://www.nexusmods.com/newvegas/mods/77942" target="_blank">Rigged Shotgun (Single Shotgun) Texture UV Map Fix for SWRP</a> to fix a bug</li>
+                    </ul> An optimised version of an oldie but goodie pack remaking most ranged ballistic weapons in vanilla-friendly form. You’ll find the Cowboy Repeater gets annoying to aim down sights as its unique sight takes up way more screen space than any other weapon sight (as designed by Obsidian), so no Repeater Peep Sight removes that. The final mods patch SWRP visual glitch oversights. 
+                    </p>
+                </div>
+                <!-- Weapon Textures from Heaven -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/newvegas/mods/69837" target="_blank">
+                            <h2 id="wth"> Weapon Textures from Heaven </h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li><b>Main File - Weapon Textures from Heaven</b></li>
+                        <li>Install my slighty modified <a href="https://mega.nz/file/N0dBQAZa#g8Yzdc9GK3kV2PXlF2FgIwy65j00RnqCIsUDViuMbdQ" target="_blank">Weapon Retexture Project patch</a> so it works with Simplified Weapon Retexture Project</li>
+                    </ul> Weapon texture pack with a realistic visual style focused on traditional ballistic weapons like the Pistol, Caravan Shotgun, Battle Rifle etc. 
+                    </p>
+                </div>
+                <!-- WAP Cowboy Repeater Series Replacer -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/newvegas/mods/73384" target="_blank">
+                            <h2 id="wap_repeater"> WAP Cowboy Repeater Series Replacer </h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li><b>Main File - WAP Cowboy Repeater Series - Main</b></li>
+                    </ul> I personally find WTH’s Cowboy Repeater too distractingly different from the vanilla design, so you should download this cleaner one to replace it instead.
+                    </p>
+                </div>
+                <!-- Weapon Retexture from EVE -->
+                <div class="section">
+                    <p>
+                        <a class="link" href="https://www.nexusmods.com/newvegas/mods/76606" target="_blank">
+                            <h2 id="nst"> Weapon Retexture from EVE </h2>
+                        </a>
+                    <h2 class="install">Installation instructions:</h2>
+                    <ul>
+                        <li><b>Main File - Weapon Retexture from EVE</b></li>
+                    </ul> Adds nice energy weapons textures taken from a buggier effects mod.
+                    </p>
+                </div>
+            <!-- Melee Retextures -->
+            <div class="section">
+                <p>
+                    <h2 id="melee_retextures">Melee Retextures</h2>
+                    The three mods below combines replace all melee weapon textures. Download the single <strong>Main File</strong> for each.
+                        <ul>
+                            <li><a href="https://www.nexusmods.com/newvegas/mods/69701" target="_blank">Melee Pack</a></li>
+                            <li><a href="https://www.nexusmods.com/newvegas/mods/42509" target="_blank">One Hand Melee HD</a></li>
+                            <li><a href="https://www.nexusmods.com/newvegas/mods/63000" target="_blank">Throwing melee weapon retexture</a></li>
+                        </ul>
+                </p>
+            </div>
+            <!-- New Vegas Redesigned 2 Revised -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/71556" target="_blank">
+                        <h2 id="nvr2r"> New Vegas Redesigned 2 Revised </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - New Vegas Redesigned 2 Revised</b></li>
+                    <li>Also install the <a href="https://www.nexusmods.com/newvegas/mods/77662" target="_blank">Armor Replacer Child NPC Fix - New Vegas Redesigned 2 (NVR2) Revised Compatibility Patch</a></li>
+                    <li>Also install <a href="https://www.nexusmods.com/newvegas/mods/71577" target="_blank">FaceGen Tint Fixes for NVR2R</a> to remove a slightly moudly look in faces (please note this will increase your install size by 400MB+ after extraction)</li>
+                </ul> Bug fixed character overhaul improving the faces of all major NPCs whilst remaining close to their original character designs.
+                </p>
+                <blockquote>NVR2R by default includes many compatibility patches for other mods. Note down which compatibility patches are offered and reinstall this if you install any mods it requires a patch for.</blockquote>
+            </div>
+            <!-- TYPE4 + Patches -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/66903" target="_blank">
+                        <h2 id="type4"> TYPE4 - Body and Armors </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - T4 - Main</b></li>
+                    <li>Download <a href="https://www.nexusmods.com/newvegas/mods/68424" target="_blank">T4 - NVR2</a> to remove neck seams when combined with NVR2R</li>
+                    <li>Download <a href="https://www.nexusmods.com/newvegas/mods/69642" target="_blank">More Modest T4 - Main</a> and More Modest T4 - Fix to replace skimpy outfits</li>
+                    <li>Download <a href="https://www.nexusmods.com/newvegas/mods/74893" target="_blank">Type4 Patches</a> for compatibility patches</li>
+                </ul> Excellent female body replacer removing visible neck seams. It unfortunately includes needlessly skimpy outfits for more revealing NPCs like the prostitues and Fiends. More Modest T4 replaces those outfits with vanilla ones.
+                </p>
+            </div>
+            <!-- Improved Vanilla Male Body -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/70160" target="_blank">
+                        <h2 id="male_body"> Improved Vanilla Male Body </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - 01 - Improved Male Body - FOMOD Installer</b></li>
+                    <li><b>Optional File - 091 - 2k Body</b></li>
+                </ul> Much nicer male body replacer. 2k patch replaces 4k textures for performance.
+                </p>
+            </div>
+            <!-- All Non DLC Clothing Retex 4K-2K -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/74315" target="_blank">
+                        <h2 id="clothing"> All Non DLC Clothing Retex 4K-2K </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - All Clothing Retex 2k</b></li>
+                </ul> Good quality AI upscales of all NPC clothing and armour.
+                </p>
+            </div>
+            <!-- NV Armor Clothing Upscale Project -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/79241" target="_blank">
+                        <h2 id="male_body"> NV Armor Clothing Upscale Project </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - NV Upscale Project 1K 2K (WipV7)</b></li>
+                </ul> More modern AI upscales better than the above with a more natural look and optimised files, but it currently only touches DLC clothing with some vanilla ones. It will likely completely replace the above in the future.
+                </p>
+            </div>
+            <!-- Assorted Leather Armor Retexture -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/77745" target="_blank">
+                        <h2 id="alar"> Assorted Leather Armor Retexture </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - Assorted Leather Armor Retexture</b></li>
+                </ul> Realistic leather armor replacer.
+                </p>
+            </div>
+            <!-- Assorted Legion Armor Retexture -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/77585" target="_blank">
+                        <h2 id="alegionar"> Assorted Legion Armor Retexture </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - Assorted Legion Armor Retexture</b></li>
+                </ul> Realistic Legion armor replacer.
+                </p>
+            </div>
+            <!-- Adamowicz Vault Suits -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/77792" target="_blank">
+                        <h2 id="avs"> Adamowicz Vault Suits </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - FNV Adamowicz Vault Suits V3</b></li>
+                </ul> Slick Vault suits retexture based on the original concept art.
+                </p>
+            </div>
+            <!-- ADAM Reborn -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/61390" target="_blank">
+                        <h2 id="adam_reborn"> ADAM Reborn </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - ADAM All-In-One Installer 4.5.2</b></li>
+                </ul> Excellent replacer for all NCR armors.
+                </p>
+            </div>
+            <!-- Natural Duster Coats -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/78260" target="_blank">
+                        <h2 id="adam_reborn"> Natural Duster Coats </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - Natural Duster Coats - ADAM Reborn</b></li>
+                </ul> Reanimates ADAM's duster coat outfits for realism.
+                </p>
+            </div>
+            <!-- Power Armor Visual Enhancement (PAVE) -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/74786" target="_blank">
+                        <h2 id="pave"> Power Armor Visual Enhancement (PAVE) </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - Power Armor Visual Enhancement 2k</b></li>
+                    <li><b>Optional File - PAVE Plugin patch</b></li>
+                </ul> Beautiful recent Power Armor overhaul.
+                </p>
+            </div>
+            <!-- aMidianBorn NV Book Of Water -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/39873" target="_blank">
+                        <h2 id="amb_flesh"> aMidianBorn NV Book Of Water </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - BOA NV The Book Of Flesh</b></li>
+                </ul> Very old but very good armour and enemy remodels. Get Book of Flesh only (PAVE has made Book of Steel redundant).
+                </p>
+            </div>
+            <!-- aMidianBorn Superb Mutants -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/78281" target="_blank">
+                        <h2 id="amb_flesh"> aMidianBorn Superb Mutants </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - aMidianBorn NV Superb Mutants</b></li>
+                </ul> High quality Super Mutants from aMidianBorn previously unreleased on Nexus Mods.
+                </p>
+            </div>
+            <!-- Collection 8b/10: Graphics Extra -->
+            <div class="section">
+                <p>
+                    <h2 id="collection_graphics_extra">Collection 8b/10: <a class="link" href="https://next.nexusmods.com/newvegas/collections/lihbzh" target="_blank">Graphics Extras</a></h2>
+                    The mods contained in this Collection upgrade smaller objects including immersive animations which shouldn't impact performance.
+                </p>
+                <blockquote>LOD generation isn't required for this Collection since it only replaces small objects.</blockquote>
+            </div>
+            <!-- 6IXES Clutter Texture Pack NV Edition -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/78608" target="_blank">
+                        <h2 id="6ixes"> 6IXES Clutter Texture Pack NV Edition </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - 6IXES Clutter Texture Pack NV Edition</b></li>
+                </ul> Excellent clutter retextures.
+                </p>
+            </div>
+            <!-- Clutter Additions -->
+            <div class="section">
+                <p>
+                    <h2 id="acr"> Additional Clutter Replacers </h2>
+                The <strong>Main File</strong> for each of these clutter texture packs should be installed for extra retextures. 6IXES should override any conflicts so that only the missing objects are replaced as 6IXES is more recently made and vanilla-like.
+                <ul>
+                    <li><a href="https://www.nexusmods.com/newvegas/mods/42551" target="_blank">MGs Neat Reclutter Texture Pack</a> - download <b>MGs NCR Pack Ojo friendly 7</b> only</li>
+                    <li><a href="https://www.nexusmods.com/newvegas/mods/70035" target="_blank">Blackwolf24s HD Clutter pack</li>
+                    <li><a href="https://www.nexusmods.com/newvegas/mods/73186" target="_blank">Blackwolf24s HD Clutter Pack 2</li>
+                    <li><a href="https://www.nexusmods.com/newvegas/mods/58318" target="_blank">Audley's Misc Textures Fear and Loathing Pack</li>
+                    <li><a href="https://www.nexusmods.com/newvegas/mods/74267" target="_blank">Micro Clutter v1.1 - 1k textures</a> (this pack should override any conflicts with 6IXES as it's more recent and actively maintained unlike the other packs)</li>
+                    <li><a href="https://www.nexusmods.com/newvegas/mods/59756" target="_blank">Neglected Clutter and Other Things</a> - install <strong>Neglected Clutters</strong> and <strong>Neglected Architecture and Furnitures</strong>. <b>In File Conflicts, swap the pokerchiprack.dds with MGs to avoid a big performance hit. Also ensure that the couch files from Furniture are overridden by Superpele to avoid a visual bug.</b></li>
+                </ul>
+                </p>
+            </div>
+            <!-- Physically Based Collections -->
+            <div class="section">
+                <p>
+                    <a class="link optional" href="#pbc">
+                        <h2 id="pbc">Physically Based Collections</h2>
+                    </a>
+                    Bale's Physically Based packs are incredibly detailed asset replacers for common clutter objects. Whilst they look stunning, they make objects considerably more detailed and therefore can have a noticable performance impact. You should only install their mods if you have a higher end PC that can handle it.
+                    <ul>
+                        <li><a href="https://www.nexusmods.com/newvegas/mods/78798" target="_blank">Physically Based Chems</a></li>
+                        <li><a href="https://www.nexusmods.com/newvegas/mods/77524" target="_blank">Physically Based Collection</a></li>
+                        <li><a href="https://www.nexusmods.com/newvegas/mods/79541" target="_blank">Physically Based Kitchenware</a></li>
+                        <li><a href="https://www.nexusmods.com/newvegas/mods/76089" target="_blank">Physically Based Wood Crates</a></li>
+                    </ul>
+                </p>
+            </div>
+            <!-- Better Books -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/74333" target="_blank">
+                        <h2 id="books"> Better Books </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - Better Books</b></li>
+                </ul> High quality book replacers.
+                </p>
+            </div>
+            <!-- Magazines of Unparalleled Aesthetic Quality -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/74304" target="_blank">
+                        <h2 id="magazines"> Magazines of Unparalleled Aesthetic Quality </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - Magazines of Unparalleled Aesthetic Quality</b></li>
+                </ul> High quality magazine replacers.
+                </p>
+            </div>
+            <!-- High Res Posters and Grafitti -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/64589" target="_blank">
+                        <h2 id="magazines"> High Res Vanilla Posters and Graffiti </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - Hi Res Posters</b></li>
+                    <li>Also install the <strong>Main File</strong> for <a href="https://www.nexusmods.com/newvegas/mods/41776" target="_blank">HiRes Raider Grafitti</a> and override (After) to replace the grafitti assets with better quality ones</li>
+                </ul> Better posters.
+                </p>
+            </div>
+            <!-- Hectrol's Textures -->
+            <div class="section">
+                <p>
+                    <h2 id="hectrol">Hectrol's Textures</h2>
+                    Hectrol released a bunch of excellent individual textures shortly after the game came out. They're all relatively small AKA performance-friendly whilst looking significantly bettter than the vanilla game. I recommend installing each of these.
+                    <ul>
+                        <li><a href="https://www.nexusmods.com/newvegas/mods/40817" target="_blank">Chessboard</a></li>
+                        <li><a href="https://www.nexusmods.com/newvegas/mods/38950" target="_blank">Ed-E Type A Deluxe</a></li>
+                        <li><a href="https://www.nexusmods.com/newvegas/mods/40513" target="_blank">Mailbox</a></li>
+                        <li><a href="https://www.nexusmods.com/newvegas/mods/40666" target="_blank">MiniNuke</a></li>
+                        <li><a href="https://www.nexusmods.com/newvegas/mods/40223" target="_blank">Sewer</a></li>
+                        <li><a href="https://www.nexusmods.com/newvegas/mods/40333" target="_blank">Tumbleweed</a></li>
+                    </ul>
+                </p>
+            </div>
+            <!-- EXE - Effect teXtures Enhanced -->
+            <div class="section">
+                <p>
+                    <a class="link optional" href="https://www.nexusmods.com/newvegas/mods/62989" target="_blank">
+                        <h2 id="exe"> EXE - Effect teXtures Enhanced </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - EXE FULL RES V2 -LATEST-</b></li>
+                </ul> Better effects textures. They may impact performance.
+                </p>
+            </div>
+            <!-- NV Translucency Overhaul -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/70276" target="_blank">
+                        <h2 id="nvto"> NV Translucency Overhaul </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - NV Translucency Overhaul - Performance</b></li>
+                    <li>Allow other texture packs to override this in File Conflicts to avoid visual discrepencies</li>
+                </ul> Texture pack overhauling objects with transparency like windows, bottles, glass pitchers etc.
+                </p>
+            </div>
+            <!-- Alcohol Bottles OVERHAUL -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/73919" target="_blank">
+                        <h2 id="abo"> Alcohol Bottles OVERHAUL </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Optional File - 01 - Alcohol Bottles - Low Res - 1k</b></li>
+                    <li>Override all File Conflicts with NV Translucency Overhaul and any other mods</li>
+                </ul> Better alcohol bottles.
+                </p>
+            </div>
+            <!-- PM's HD Ammo Boxes -->
+            <div class="section">
+                <p>
+                    <a class="link" href="https://www.nexusmods.com/newvegas/mods/64007" target="_blank">
+                        <h2 id="exe"> PM's HD Ammo Boxes </h2>
+                    </a>
+                <h2 class="install">Installation instructions:</h2>
+                <ul>
+                    <li><b>Main File - PM's HD Ammo Boxes - 1K Diffuse 512px Normals</b></li>
+                </ul> High quality ammo boxes replacer.
+                </p>
+            </div>
+            <!-- Small Detail Mods -->
+            <div class="section">
+                <p>
+                    <h2 id="dm">Detail Mods</h2>
+                    Installing the below mods will replace specific objects I noticed seemed low-res throughout my New Vegas playthroughs.
+                    <ul>
+                        <li><a href="https://www.nexusmods.com/newvegas/mods/79351" target="_blank">aubri's pre-war money (1k variant)</a></li>
+                        <li><a href="https://www.nexusmods.com/newvegas/mods/41974" target="_blank">Authentic Burned Man</a></li>
+                        <li><a href="https://www.nexusmods.com/newvegas/mods/73216" target="_blank">Barrier Replacer</a></li>
+                        <li><a href="https://www.nexusmods.com/newvegas/mods/55606" target="_blank">Better Gas Leak Effect</a></li>
+                        <li><a href="https://www.nexusmods.com/newvegas/mods/76113" target="_blank">ETJ Realistic Enhanced Blood Textures</a> - download Strings of New Vegas only</li>
+                        <li><a href="https://www.nexusmods.com/newvegas/mods/72089" target="_blank">HD Hoover Dam Memorial</a></li>
+                        <li><a href="https://www.nexusmods.com/newvegas/mods/75868" target="_blank">Irradiant Muck (Less Irradiant Muck variant)</a> - makes muck pools glow a sickly green</li>
+                        <li><a href="https://www.nexusmods.com/newvegas/mods/70298" target="_blank">Less Green Combat Armor</a> - armor looks low-res otherwise</li>
+                        <li><a href="https://www.nexusmods.com/newvegas/mods/69041" target="_blank">McCarran main terminal transparent glass NMC version</a></li>
+                        <li><a href="https://www.nexusmods.com/newvegas/mods/69700" target="_blank">Minigun Retextured</a> - this adds an extra .esp plugin so feel free to skip this if you hit the limit since it just replaces one weapon</li>
+                        <li><a href="https://www.nexusmods.com/newvegas/mods/72568" target="_blank">Mr House Painting Redone</a> - override the posters conflict</li>
+                        <li><a href="https://www.nexusmods.com/newvegas/mods/79258" target="_blank">Old Old Glory 1k</a></li>
+                        <li><a href="https://www.nexusmods.com/newvegas/mods/74394" target="_blank">Playing Cards HD Retexture</a></li>
+                        <li><a href="https://www.nexusmods.com/newvegas/mods/78513" target="_blank">Prime Tapes HD Holotape Replacer (2k Compressed)</a></li>
+                        <li><a href="https://www.nexusmods.com/newvegas/mods/79569" target="_blank">Tent With Canvas Door Darkened</a> - replaces noticeably hideous metal tent doors with a canvas one</li>
+                        <li><a href="https://www.nexusmods.com/newvegas/mods/41101" target="_blank">Textures Over Time Sandbags</a> - download sandbags only. Sandbags look low-res otherwise</li>
+                        <li><a href="https://www.nexusmods.com/newvegas/mods/72778" target="_blank">The Desaturated Brahmin</a> - makes Brahmins more realistic via desaturating their textures</li>
+                        <li><a href="https://www.nexusmods.com/newvegas/mods/70990" target="_blank">Yes we CAN</a></li>
+                    </ul>
+                </p>
+            </div>
+            <!-- Ashen's Animations -->
+            <div class="section">
+                <p>
+                    <h2 id="ashen">Ashen's Animations</h2>
+                    This final set adds subtle, immersive animations from Ashens2014 to world objects you’ll see often in the Wasteland. I carefully curated these suggestions as some I found distracting or didn’t suit its context well enough IMO i.e. an animated thermometer for Novac, a poor town, I skipped since to me it doesn't make sense for them to have more advanced technology. They make the world feel much more alive when installed together with a non-exitent performance impact.
+                    <ul>
+                        <li><a href="https://www.nexusmods.com/newvegas/mods/72908" target="_blank">Animated Barges</a></li>
+                        <li><a href="https://www.nexusmods.com/newvegas/mods/78579" target="_blank">Animated Clothing ( mostly female)</a></li>
+                        <li><a href="https://www.nexusmods.com/newvegas/mods/72629" target="_blank">Animated Fallout New Vegas Tents</a></li>
+                        <li><a href="https://www.nexusmods.com/newvegas/mods/73333" target="_blank">Animated Gomorrah</a></li>
+                        <li><a href="https://www.nexusmods.com/newvegas/mods/73380" target="_blank">Animated Female Sign</a></li>
+                        <li><a href="https://www.nexusmods.com/newvegas/mods/72949" target="_blank">Hanging Fish swaying replacer</a></li>
+                        <li><a href="https://www.nexusmods.com/newvegas/mods/72413" target="_blank">Animated Interior Decorations</a></li>
+                        <li><a href="https://www.nexusmods.com/newvegas/mods/73754" target="_blank">Animated Market Stall Cloth Pack</a> (Main File only)</li>
+                        <li><a href="https://www.nexusmods.com/newvegas/mods/73641" target="_blank">Animated nv campgolf holesigns</a></li>
+                        <li><a href="https://www.nexusmods.com/newvegas/mods/72264" target="_blank">Animated Park Equipment Pack</a> (just animated swings no merry-go-round)</li>
+                        <li><a href="https://www.nexusmods.com/newvegas/mods/72230" target="_blank">Animated Pylon Wires</a></li>
+                        <lli><a href="https://www.nexusmods.com/newvegas/mods/72311" target="_blank">Animated Raider Dressings</a></lli>
+                        <li><a href="https://www.nexusmods.com/newvegas/mods/73741" target="_blank">Animated Vault 21 Hotel Sign</a></li>
+                        <li><a href="https://www.nexusmods.com/newvegas/mods/72270" target="_blank">Cables Of fallout Animated</a></li>
+                        <li><a href="https://www.nexusmods.com/newvegas/mods/79328" target="_blank">Fallout Flag Animation Overhaul</a></li>
+                        <li><a href="https://www.nexusmods.com/newvegas/mods/74103" target="_blank">Military Truck Replacer</a></li>
+                        <li><a href="https://www.nexusmods.com/newvegas/mods/72952" target="_blank">The Swaying Bushes Of Honest Hearts</a></li>
+                        <li><a href="https://www.nexusmods.com/newvegas/mods/72403" target="_blank">Vault 22 Animated Foliage</a></li>
+                        <li><a href="https://www.nexusmods.com/newvegas/mods/72597" target="_blank">Wasteland Trees Given Idle movement</a></li>
+                    </ul>
+                </p>
+            </div>
+                <div>
+                    <p>
+                        <hr>
+                        <a href="./lighting.html" id="previous"><img class="navigationArrow left mirror" src="./img/arrow.webp" alt="Back Arrow"></a>
+                        <a href="./world-overhaul.html" id="next"><img class="navigationArrow right" src="./img/arrow.webp" alt="Forward Arrow"></a>
+                    </p>
+                </div>
+                </p>
+            </div>
+            <!-- Right Sidebar -->
+            <div id="sidenavRight">
+                <p>
+                <ul>
+                    <li>
+                        <a href="#collection_graphics_core">Collection 8a/10: Graphics Core</a>
+                    </li>
+                    <ul>
+                        <li>
+                            <a href="#melee_retextures">Melee Retextures</a>
+                        </li>
+                    </ul>
+                    <li>
+                        <a href="#collection_graphics_extra">Collection 8b/10: Graphics Extras</a>
+                    </li>
+                    <ul>
+                        <li>
+                            <a href="#acr">Additional Clutter Replacers</a>
+                        </li>
+                        <li>
+                            <a href="#pbc">PBC</a>
+                        </li>
+                        <li>
+                            <a href="#dm">Detail Mods</a>
+                        </li>
+                        <li>
+                            <a href="#ashen">Ashen's Animations</a>
+                        </li>
+                    </ul>
+                </ul>
+                </p>
+            </div>
+            <div>
+                <p>
+                    <hr>
+                    <a href="./gameplay-plus.html" id="previous"><img class="navigationArrow left mirror" src="./img/arrow.webp" alt="Back Arrow"></a>
+                    <a href="./graphics.html" id="next"><img class="navigationArrow right" src="./img/arrow.webp" alt="Forward Arrow"></a>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
